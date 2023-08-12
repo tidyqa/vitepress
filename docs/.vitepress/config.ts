@@ -8,6 +8,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://tidyqa.com',
   },
+
   head: [
     [
       'link',
@@ -15,7 +16,7 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
   ],
-  //lastUpdated: true,
+
   //cleanUrls: true,
   themeConfig: {
     search: {

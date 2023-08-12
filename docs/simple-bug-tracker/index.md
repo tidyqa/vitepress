@@ -6,10 +6,6 @@ head:
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/simple-bug-tracker/' }] 
   - ['meta', {name: 'twitter:title', content: 'Simple Bug Tracker'}]
   - ['link', {rel: 'canonical', href: 'https://tidyqa.com/simple-bug-tracker/'}]
-
-
-lastUpdated: true
-
 ---
 
 # Simple Bug Tracker
