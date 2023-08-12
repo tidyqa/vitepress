@@ -22,8 +22,8 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
+    logo: { src: '/files/tidyqa-logo-mini.svg', width: 24, height: 24 },
 
-    logo: '/files/tidyqa-logo-mini.svg',
     footer: {
       message:
         'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
