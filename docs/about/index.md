@@ -36,3 +36,22 @@ Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://sta
 ## Contact
 
 Email: qatidy@gmail.com
+
+<VPTeamMembers size="small" :members="members" />
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://www.github.com/tidyqa.png',
+    name: 'Bruno Vučica',
+    title: 'Quality Assurance Tester',
+    links: [
+      { icon: 'github', link: 'https://github.com/tidyqa' },
+      { icon: 'linkedin', link: 'https://hr.linkedin.com/in/bruno-vu%C4%8Dica-b9712892' }
+    ]
+  },
+
+]
+</script>
