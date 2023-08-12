@@ -16,7 +16,7 @@ hero:
   
   actions:
     - theme: brand
-      text: About Me
+      text: About
       link: /about/
     - theme: alt
       text: Tutorials
