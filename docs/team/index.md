@@ -1,5 +1,13 @@
 ---
 layout: page
+title: Team
+description: People.
+
+head:
+  - ['meta', {property: 'og:title', content:  'Team' }]
+  - ['meta', {property: 'og:url', content:  'https://tidyqa.com/team/' }] 
+  - ['meta', {name: 'twitter:title', content: 'Team'}]
+  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/team/'}]
 ---
 
 <script setup>
