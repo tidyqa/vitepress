@@ -14,7 +14,7 @@ const coreMembers = [
 {
     avatar: 'https://www.github.com/tidyqa.png',
     name: 'Bruno Vučica',
-    title: 'Quality Assurance Tester',
+    title: 'Tester',
     links: [
       { icon: 'github', link: 'https://github.com/tidyqa' },
       { icon: 'linkedin', link: 'https://hr.linkedin.com/in/bruno-vu%C4%8Dica-b9712892' }
@@ -30,6 +30,15 @@ const partners = [
     links: [
       { icon: 'github', link: 'https://github.com/yyx990803' },
       { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+    ]
+  },
+    {
+    avatar: 'https://www.github.com/kiaking.png',
+    name: 'Kia King Ishii',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/kiaking' },
+      { icon: 'twitter', link: 'https://twitter.com/KiaKing85' }
     ]
   },
 

@@ -46,7 +46,7 @@ const members = [
   {
     avatar: 'https://www.github.com/tidyqa.png',
     name: 'Bruno Vučica',
-    title: 'Quality Assurance Tester',
+    title: 'Tester',
     links: [
       { icon: 'github', link: 'https://github.com/tidyqa' },
       { icon: 'linkedin', link: 'https://hr.linkedin.com/in/bruno-vu%C4%8Dica-b9712892' }
