@@ -11,7 +11,11 @@ head:
 
 # Extension Icons
 
-The `"icons"` section within the `manifest.json` file specifies a set of icons in different sizes to visually represent the TidyQA Simple Bug Tracker Chrome extension in various contexts. Icons play a crucial role in conveying the extension's identity and functionality to users. Each icon size serves a specific purpose within the browser interface.
+The `"icons"` section within the `manifest.json` file specifies a set of icons in different sizes to visually represent the TidyQA Simple Bug Tracker Chrome extension in various contexts. 
+
+## Sizes
+
+Icons play a crucial role in conveying the extension's identity and functionality to users. Each icon size serves a specific purpose within the browser interface.
 
 ```json
 "icons": {
@@ -21,6 +25,8 @@ The `"icons"` section within the `manifest.json` file specifies a set of icons i
   "128": "icon128.png"
 }
 ```
+
+## Icons
 
 - ![Icon16](/files/icon16.png) `"16": "icon16.png"`: This icon is used in places where a smaller representation is needed, such as within the browser's address bar and when viewing extensions in the "Extensions" page.
 
