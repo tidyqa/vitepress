@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: About Me
+title: About
 description: Web and Mobile Applications Testing and Developing.
 
 head:
