@@ -1,5 +1,5 @@
 ---
-title: Simple Bug Trackers
+title: Simple Bug Tracker
 description: Learn about Chrome extension development and bug tracking while exploring a practical project.
 head:
   - ['meta', {property: 'og:title', content:  'Simple Bug Tracker' }]
