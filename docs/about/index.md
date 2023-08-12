@@ -29,7 +29,7 @@ Hello, I'm Bruno, and I appreciate you taking the time to visit!
 - Static Website Design
 - Logo Design
 
-## Blog
+## About Website
 
 Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://stackblitz.com/), the code is hosted on GitHub, using the MIT license and currently running on [Netlify](https://www.netlify.com).
 
