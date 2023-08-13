@@ -10,7 +10,7 @@ head:
 
 # Installation
 
-How to Manually Install TidyQA Simple Bug Tracker Chrome Extension from a ZIP File.
+How to Manually Install TidyQA Simple Bug Tracker Chrome Extension from a ZIP File?
 
 ## Download ZIP File
 
