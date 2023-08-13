@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'TidyQA',
-  description: 'Vite & Vue powered static site generator.',
+  description: 'Enhance software quality and ensure flawless performance for your applications',
   sitemap: {
     hostname: 'https://tidyqa.com',
   },
@@ -18,7 +18,7 @@ export default defineConfig({
   ],
   //cleanUrls: true,
   themeConfig: {
-    search: {
+      search: {
       provider: 'local',
     },
     logo: { src: '/files/tidyqa-logo-mini.svg', width: 24, height: 24 },

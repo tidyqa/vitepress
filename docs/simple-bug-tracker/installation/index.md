@@ -1,4 +1,5 @@
 ---
+layout: doc
 last Updated: true
 title: Installation - Simple Bug Tracker
 description: Install TidyQA Simple Bug Tracker Chrome Extension from a ZIP File.
