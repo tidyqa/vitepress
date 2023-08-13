@@ -16,9 +16,10 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
   ],
-
   //cleanUrls: true,
   themeConfig: {
+  
+    lastUpdatedText: 'Last Update',
     search: {
       provider: 'local',
     },
