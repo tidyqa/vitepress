@@ -1,4 +1,5 @@
 ---
+last Updated: true
 title: Simple Bug Tracker
 description: Learn about Chrome extension development and bug tracking while exploring a practical project.
 head:

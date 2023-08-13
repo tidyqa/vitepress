@@ -18,8 +18,6 @@ export default defineConfig({
   ],
   //cleanUrls: true,
   themeConfig: {
-  
-    lastUpdatedText: 'Last Update',
     search: {
       provider: 'local',
     },

@@ -26,7 +26,6 @@ Hello, I'm Bruno, and I appreciate you taking the time to visit!
 - Exploratory Testing for Web and Mobile Applications
 - Essential Website Optimization
 - Static Website Design
-- Logo Design
 
 ## About Website
 
