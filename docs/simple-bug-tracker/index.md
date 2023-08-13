@@ -11,7 +11,7 @@ head:
 
 # Simple Bug Tracker
 
-This extension has been developed for educational purposes, providing you with an opportunity to learn about Chrome extension development and bug tracking while exploring a practical project.
+This extension has been developed for educational purposes, providing you with an opportunity to learn about Chrome extension development and bug tracking while exploring a practical project..
 
 ## Learn by Doing
 
