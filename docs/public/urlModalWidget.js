@@ -146,14 +146,13 @@
           if (specificElement) {
             const mouseLeaveHandler = () => {
               // Check if the modal is already open
-              this.openModalWithMessage(matchedMessage.elementId);
               const modalElement = document.getElementById('modal');
               if (!modalElement) {
                 this.openModalWithMessage(matchedMessage.elementId);
-                specificElement.removeEventListener(
-                  'mouseleave',
-                  mouseLeaveHandler
-                );
+                // specificElement.removeEventListener(
+                //   'mouseleave',
+                //   mouseLeaveHandler
+                // );
               }
             };
 
