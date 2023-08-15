@@ -17,7 +17,7 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
     //['link', { rel: 'prefetch', href: '/files/urlModalWidget.js' }],
-    ['script', { type:'module', src: '/snippets/urlModalWidget.js' }],
+  ['script', { src: '/urlModalWidget.js' }],
   ],
   //cleanUrls: true,
   themeConfig: {
