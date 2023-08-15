@@ -177,49 +177,39 @@
   // Initialize the modal widget
   modalWidget.initialize();
 
-  function generateSlug(keyword) {
-    // Convert keyword to lowercase and replace spaces with hyphens
-    const slug = keyword.toLowerCase().replace(/ /g, '-');
+  
 
-    // Remove non-alphanumeric characters except hyphens
-    const cleanedSlug = slug.replace(/[^a-zA-Z0-9-]/g, '');
 
-    return cleanedSlug;
-  }
-
-  function createLink(slug, keyword) {
-    const link = document.createElement('a');
-    link.href = `/articles/${slug}`;
-    link.textContent = keyword;
-
-    return link;
-  }
-
-  function replaceKeywordsWithLinks(container, keywords) {
-    const contentElement = document.querySelector(container);
-
-    keywords.forEach((keyword) => {
-      const slug = generateSlug(keyword);
-      const regex = new RegExp('\\b' + keyword + '\\b', 'gi');
-      contentElement.innerHTML = contentElement.innerHTML.replace(
-        regex,
-        (match) => {
-          return createLink(slug, match).outerHTML;
+  document.addEventListener('DOMContentLoaded', function() {
+    function createLink(slug, keyword) {
+        const link = document.createElement('a');
+        link.href = `/articles/${slug}`;
+        link.textContent = keyword;
+        return link;
+    }
+    
+    function replaceKeywordsWithLinks(container, keywords) {
+        const contentElement = document.querySelector(container);
+        
+        if (contentElement) {
+            keywords.forEach(keyword => {
+                const slug = keyword.slug;
+                const replaceText = createLink(slug, keyword.keyword).outerHTML;
+                contentElement.innerHTML = contentElement.innerHTML.split(keyword.keyword).join(replaceText);
+            });
+        } else {
+            console.error(`Element with class '${container}' not found.`);
         }
-      );
-    });
-  }
+    }
+    
+    const longtailKeywords = [
+        { keyword: "communicate directly", slug: "best-hiking-trails" },
+        { keyword: "Healthy cooking recipes", slug: "healthy-cooking-recipes" },
+        { keyword: "Beginner's guide to gardening", slug: "beginners-guide-to-gardening" }
+    ];
+    
+    replaceKeywordsWithLinks('.main', longtailKeywords);
+});
 
-  // Example array of longtail keywords and their corresponding slugs
-  const longtailKeywords = [
-    { keyword: 'ensuring everyone', slug: 'best-hiking-trails' },
-    { keyword: 'Implement smooth', slug: 'healthy-cooking-recipes' },
-    { keyword: 'Based Modal Widget', slug: 'beginners-guide-to-gardening' },
-  ];
 
-  // Replace keywords with links within the specified div class
-  replaceKeywordsWithLinks(
-    '.main',
-    longtailKeywords.map((item) => item.keyword)
-  );
 })();
