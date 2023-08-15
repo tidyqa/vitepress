@@ -1,5 +1,4 @@
 (function () {
-
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     elementMessages: [
@@ -67,17 +66,16 @@
     `,
 
     // Extended openModalWithMessage function
- // Extended openModalWithMessage function
- openModalWithMessage: function (elementId) {
-  const matchedMessage = this.elementMessages.find(
-    (elementMessage) => elementMessage.elementId === elementId
-  );
+    openModalWithMessage: function (elementId) {
+      const matchedMessage = this.elementMessages.find(
+        (elementMessage) => elementMessage.elementId === elementId
+      );
 
-  if (matchedMessage) {
-    const modal = document.createElement('div');
-    modal.id = 'modal';
-    modal.className = 'modal';
-    modal.innerHTML = `
+      if (matchedMessage) {
+        const modal = document.createElement('div');
+        modal.id = 'modal';
+        modal.className = 'modal';
+        modal.innerHTML = `
       <style>${this.modalStyles}</style>
       <p>${matchedMessage.message}</p>
       <div class="button-container">
@@ -85,20 +83,20 @@
       </div>
     `;
 
-    document.body.appendChild(modal);
+        document.body.appendChild(modal);
 
-    const modalElement = document.getElementById('modal');
-    modalElement.style.display = 'block';
-    modalElement.classList.add(`modal-${this.modalSettings.position}`);
+        const modalElement = document.getElementById('modal');
+        modalElement.style.display = 'block';
+        modalElement.classList.add(`modal-${this.modalSettings.position}`);
 
-    // Add event listeners to the hide buttons
-    const hideButton = modalElement.querySelector('.hide-page-button');
+        // Add event listeners to the hide buttons
+        const hideButton = modalElement.querySelector('.hide-page-button');
 
-    hideButton.addEventListener('click', () => {
-      this.hideModalForPage();
-    });
-  }
-},
+        hideButton.addEventListener('click', () => {
+          this.hideModalForPage();
+        });
+      }
+    },
 
     // Function to close the modal
     closeModal: function () {
@@ -126,7 +124,9 @@
       );
 
       if (matchedMessage) {
-        const specificElement = document.getElementById(matchedMessage.elementId);
+        const specificElement = document.getElementById(
+          matchedMessage.elementId
+        );
 
         if (specificElement) {
           console.log('Element found');
@@ -135,7 +135,10 @@
             const modalElement = document.getElementById('modal');
             if (!modalElement) {
               this.openModalWithMessage(matchedMessage.elementId);
-              specificElement.removeEventListener('mouseenter', mouseEnterHandler);
+              specificElement.removeEventListener(
+                'mouseenter',
+                mouseEnterHandler
+              );
             }
           };
 
@@ -143,7 +146,6 @@
         }
       }
     },
-
 
     // Initialize the modal widget
     initialize: function () {
