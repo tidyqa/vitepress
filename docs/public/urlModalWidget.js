@@ -1,24 +1,21 @@
 (function () {
-  const currentURL = window.location.href;
+
   const modalWidget = {
     // Array of URLs to match with corresponding messages
-    urlMessages: [
+    elementMessages: [
       {
-        url: 'https://tidyqa.com/url-modal-widget/',
         elementId: 'what-you-ll-learn',
         message: 'Modal for Intro Page!',
       },
       {
-        url: 'https://tidyqa.com/url-modal-widget/demo/',
         elementId: 'demo',
         message: 'Modal for Demo Page!',
       },
       {
-        url: 'https://tidyqa.com/url-modal-widget/installation/',
         elementId: 'installation',
         message: 'Modal for Installation Page!',
       },
-      // Add more objects for additional URLs and messages
+      // Add more objects for additional element IDs and messages
     ],
 
     // Settings
@@ -70,45 +67,38 @@
     `,
 
     // Extended openModalWithMessage function
-    openModalWithMessage: function (elementId) {
-      //const currentURL = window.location.href;
+ // Extended openModalWithMessage function
+ openModalWithMessage: function (elementId) {
+  const matchedMessage = this.elementMessages.find(
+    (elementMessage) => elementMessage.elementId === elementId
+  );
 
-      const isModalHidden = localStorage.getItem(
-        'urlModalWidget_' + currentURL
-      );
+  if (matchedMessage) {
+    const modal = document.createElement('div');
+    modal.id = 'modal';
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <style>${this.modalStyles}</style>
+      <p>${matchedMessage.message}</p>
+      <div class="button-container">
+          <button class="hide-page-button">Hide for this page</button>
+      </div>
+    `;
 
-      const matchedMessage = this.urlMessages.find(
-        (urlMessage) =>
-          urlMessage.url === currentURL && urlMessage.elementId === elementId
-      );
+    document.body.appendChild(modal);
 
-      if (matchedMessage) {
-        const modal = document.createElement('div');
-        modal.id = 'modal';
-        modal.className = 'modal';
-        modal.innerHTML = `
-          <style>${this.modalStyles}</style>
-          <p>${matchedMessage.message}</p>
-          <div class="button-container">
-              <button class="hide-page-button">Hide for this page</button>
-          </div>
-        `;
+    const modalElement = document.getElementById('modal');
+    modalElement.style.display = 'block';
+    modalElement.classList.add(`modal-${this.modalSettings.position}`);
 
-        document.body.appendChild(modal);
+    // Add event listeners to the hide buttons
+    const hideButton = modalElement.querySelector('.hide-page-button');
 
-        const modalElement = document.getElementById('modal');
-        modalElement.style.display = 'block';
-        modalElement.classList.add(`modal-${this.modalSettings.position}`);
-        console.log(`Modal placed ${this.modalSettings.position}`);
-
-        // Add event listeners to the hide buttons
-        const hideButton = modalElement.querySelector('.hide-page-button');
-
-        hideButton.addEventListener('click', () => {
-          this.hideModalForPage();
-        });
-      }
-    },
+    hideButton.addEventListener('click', () => {
+      this.hideModalForPage();
+    });
+  }
+},
 
     // Function to close the modal
     closeModal: function () {
@@ -129,43 +119,32 @@
     },
 
     bindModalToElements: function () {
-      console.log(window.location);
-      //const currentURL = window.location.href;
-      const isModalHidden = localStorage.getItem(
-        'urlModalWidget_' + currentURL
+      console.log('bindModalToElements OK');
+
+      const matchedMessage = this.elementMessages.find(
+        (elementMessage) => elementMessage.elementId === currentElementId
       );
 
-      if (!isModalHidden) {
-        console.log('Modal not hidden');
-        const matchedMessage = this.urlMessages.find(
-          (urlMessage) => urlMessage.url === currentURL
-        );
+      if (matchedMessage) {
+        const specificElement = document.getElementById(matchedMessage.elementId);
 
-        if (matchedMessage) {
-          console.log('URL Match');
-          const specificElement = document.querySelector(
-            `#${matchedMessage.elementId}`
-          );
+        if (specificElement) {
+          console.log('Element found');
+          const mouseEnterHandler = () => {
+            // Check if the modal is already open
+            const modalElement = document.getElementById('modal');
+            if (!modalElement) {
+              this.openModalWithMessage(matchedMessage.elementId);
+              specificElement.removeEventListener('mouseenter', mouseEnterHandler);
+            }
+          };
 
-          if (specificElement) {
-            console.log('Element found');
-            const mouseLeaveHandler = () => {
-              // Check if the modal is already open
-              const modalElement = document.getElementById('modal');
-              if (!modalElement) {
-                this.openModalWithMessage(matchedMessage.elementId);
-                specificElement.removeEventListener(
-                  'mouseleave',
-                  mouseLeaveHandler
-                );
-              }
-            };
-
-            specificElement.addEventListener('mouseleave', mouseLeaveHandler);
-          }
+          specificElement.addEventListener('mouseenter', mouseEnterHandler);
         }
       }
     },
+
+
     // Initialize the modal widget
     initialize: function () {
       console.log('Initialized');
