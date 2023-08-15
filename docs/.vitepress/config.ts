@@ -4,7 +4,8 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: 'TidyQA',
-  description: 'Enhance software quality and ensure flawless performance for your applications',
+  description:
+    'Enhance software quality and ensure flawless performance for your applications',
   sitemap: {
     hostname: 'https://tidyqa.com',
   },
@@ -15,10 +16,11 @@ export default defineConfig({
       { rel: 'icon', type: 'image/svg+xml', href: '/files/favicon.svg' },
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
+    //['script', { src: '/snippets/urlModalWidget.js' }],
   ],
   //cleanUrls: true,
   themeConfig: {
-      search: {
+    search: {
       provider: 'local',
     },
     logo: { src: '/files/tidyqa-logo-mini.svg', width: 24, height: 24 },
@@ -44,48 +46,6 @@ export default defineConfig({
 
       // ...
     ],
-
-    // sidebar: [
-    //   //{ text: 'Guide', link: '/guide/' },
-    //   {
-
-    //     text: 'Simple Bug Tracker',
-    //     link: '/simple-bug-tracker/',
-    //     collapsed: false,
-    //     items: [
-    //       {
-    //         text: 'Manifest file',
-    //         link: '/simple-bug-tracker/manifest-file/',
-    //       },
-    //       {
-    //         text: 'HTML file',
-    //         link: '/simple-bug-tracker/html-file/',
-    //       },
-    //       {
-    //         text: 'CSS file',
-    //         link: '/simple-bug-tracker/css-file/',
-    //       },
-    //       {
-    //         text: 'JavaScript File',
-    //         link: '/simple-bug-tracker/javascript-file/',
-    //       },
-    //       {
-    //         text: 'Icons',
-    //         link: '/simple-bug-tracker/icons/',
-    //       },
-    //     ],
-    //   },
-    //   // {
-    //   //   text: 'Netlify Platform',
-    //   //   collapsed: false,
-    //   //   items: [
-    //   //     {
-    //   //       text: 'Form Validation',
-    //   //       link: '/netlify-platform/form-validation/',
-    //   //     },
-    //   //   ],
-    //   // },
-    // ],
 
     sidebar: {
       // This sidebar gets displayed when a user
@@ -124,18 +84,23 @@ export default defineConfig({
         },
       ],
 
-      // This sidebar gets displayed when a user
-      // is on `config` directory.
-      // '/config/': [
-      //   {
-      //     text: 'Config',
-      //     items: [
-      //       { text: 'Index', link: '/config/' },
-      //       { text: 'Three', link: '/config/three' },
-      //       { text: 'Four', link: '/config/four' },
-      //     ],
-      //   },
-      // ],
+      '/url-modal-widget/': [
+        {
+          text: 'URL Modal Widget',
+          link: '/url-modal-widget/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Installation',
+              link: '/url-modal-widget/installation/',
+            },
+            {
+              text: 'Demo',
+              link: '/url-modal-widget/demo/',
+            },
+          ],
+        },
+      ],
     },
   },
 });
