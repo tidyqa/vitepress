@@ -202,10 +202,10 @@
     }
 
     const longtailKeywords = [
-      { keyword: 'HTML file', slug: '/html-file/' },
-      { keyword: 'css file', slug: '/css-file/' },
+      { keyword: 'HTML fileSS', slug: '/html-file/' },
+      { keyword: 'css fileSS', slug: '/css-file/' },
       {
-        keyword: "javascript file",
+        keyword: "javascript fileSS",
         slug: '/Javascript-file/',
       },
     ];
