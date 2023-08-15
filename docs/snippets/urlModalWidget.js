@@ -132,20 +132,22 @@
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
       );
-
+    
       if (!isModalHidden) {
         const matchedMessage = this.urlMessages.find(
           (urlMessage) => urlMessage.url === currentURL
         );
-
+    
         if (matchedMessage) {
           const specificElement = document.querySelector(
             `#${matchedMessage.elementId}`
           );
-
+    
           if (specificElement) {
             const mouseLeaveHandler = () => {
-              if (!this.isModalOpen) {
+              // Check if the modal is already open
+              const modalElement = document.getElementById('modal');
+              if (!modalElement) {
                 this.openModalWithMessage(matchedMessage.elementId);
                 specificElement.removeEventListener(
                   'mouseleave',
@@ -153,13 +155,12 @@
                 );
               }
             };
-
+    
             specificElement.addEventListener('mouseleave', mouseLeaveHandler);
           }
         }
       }
     },
-
     // Initialize the modal widget
     initialize: function () {
       this.bindModalToElements();

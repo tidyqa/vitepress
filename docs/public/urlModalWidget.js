@@ -145,7 +145,9 @@
 
           if (specificElement) {
             const mouseLeaveHandler = () => {
-              if (!this.isModalOpen) {
+              // Check if the modal is already open
+              const modalElement = document.getElementById('modal');
+              if (!modalElement) {
                 this.openModalWithMessage(matchedMessage.elementId);
                 specificElement.removeEventListener(
                   'mouseleave',
@@ -159,7 +161,6 @@
         }
       }
     },
-
     // Initialize the modal widget
     initialize: function () {
       this.bindModalToElements();
