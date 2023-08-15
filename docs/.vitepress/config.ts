@@ -16,8 +16,8 @@ export default defineConfig({
       { rel: 'icon', type: 'image/svg+xml', href: '/files/favicon.svg' },
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
-    ['link', { rel: 'prefetch', href: '/files/urlModalWidget.js' }],
-    //['script', { src: '/snippets/urlModalWidget.js' }],
+    //['link', { rel: 'prefetch', href: '/files/urlModalWidget.js' }],
+    ['script', { type:'module', src: '/snippets/urlModalWidget.js' }],
   ],
   //cleanUrls: true,
   themeConfig: {
