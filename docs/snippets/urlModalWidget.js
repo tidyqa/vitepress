@@ -1,5 +1,4 @@
 (function () {
-  const currentURL = window.location.href;
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     urlMessages: [
@@ -71,7 +70,7 @@
 
     // Extended openModalWithMessage function
     openModalWithMessage: function (elementId) {
-      //const currentURL = window.location.href;
+      const currentURL = window.location.href;
 
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
@@ -122,14 +121,14 @@
 
     // Function to hide the modal for this page
     hideModalForPage: function () {
-      //const currentURL = window.location.href;
+      const currentURL = window.location.href;
       localStorage.setItem('urlModalWidget_' + currentURL, 'true');
       this.closeModal();
       console.log(`Modal hidden for URL ${currentURL}`);
     },
 
     bindModalToElements: function () {
-      //const currentURL = window.location.href;
+      const currentURL = window.location.href;
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
       );

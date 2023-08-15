@@ -41,7 +41,7 @@ By integrating this widget into your website, you can transform static browsing 
 By the end of this tutorial, you'll have the skills to design and implement a seamless URL-Based Modal Widget that takes your website's user engagement to the next level.
 
 <script setup>
-import {} from '/snippets/urlModalWidget.js'
+//import {} from '/snippets/urlModalWidget.js'
 
 
 </script>
