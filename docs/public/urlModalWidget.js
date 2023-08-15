@@ -177,39 +177,39 @@
   // Initialize the modal widget
   modalWidget.initialize();
 
-  
-
-
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     function createLink(slug, keyword) {
-        const link = document.createElement('a');
-        link.href = `/articles/${slug}`;
-        link.textContent = keyword;
-        return link;
+      const link = document.createElement('a');
+      link.href = `./${slug}`;
+      link.textContent = keyword;
+      return link;
     }
-    
+
     function replaceKeywordsWithLinks(container, keywords) {
-        const contentElement = document.querySelector(container);
-        
-        if (contentElement) {
-            keywords.forEach(keyword => {
-                const slug = keyword.slug;
-                const replaceText = createLink(slug, keyword.keyword).outerHTML;
-                contentElement.innerHTML = contentElement.innerHTML.split(keyword.keyword).join(replaceText);
-            });
-        } else {
-            console.error(`Element with class '${container}' not found.`);
-        }
+      const contentElement = document.querySelector(container);
+
+      if (contentElement) {
+        keywords.forEach((keyword) => {
+          const slug = keyword.slug;
+          const replaceText = createLink(slug, keyword.keyword).outerHTML;
+          contentElement.innerHTML = contentElement.innerHTML
+            .split(keyword.keyword)
+            .join(replaceText);
+        });
+      } else {
+        console.error(`Element with class '${container}' not found.`);
+      }
     }
-    
+
     const longtailKeywords = [
-        { keyword: "communicate directly", slug: "best-hiking-trails" },
-        { keyword: "Healthy cooking recipes", slug: "healthy-cooking-recipes" },
-        { keyword: "Beginner's guide to gardening", slug: "beginners-guide-to-gardening" }
+      { keyword: 'html file', slug: 'html-file/' },
+      { keyword: 'css file', slug: 'css-file/' },
+      {
+        keyword: "javascript file",
+        slug: 'Javascript-file/',
+      },
     ];
-    
+
     replaceKeywordsWithLinks('.main', longtailKeywords);
-});
-
-
+  });
 })();
