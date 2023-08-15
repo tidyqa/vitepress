@@ -1,7 +1,4 @@
 (function () {
-
-    const currentURL = window.location.href;
-
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     urlMessages: [
@@ -131,28 +128,25 @@
     },
 
     bindModalToElements: function () {
-      console.log('bindModalToElements OK');
-      //const currentURL = window.location.href;
+      console.log(window.location);
+      const currentURL = window.location.href;
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
       );
 
       if (!isModalHidden) {
-        console.log('URL is not in storage');
         const matchedMessage = this.urlMessages.find(
           (urlMessage) => urlMessage.url === currentURL
         );
 
         if (matchedMessage) {
-          console.log('Element founded');
           const specificElement = document.querySelector(
             `#${matchedMessage.elementId}`
           );
 
           if (specificElement) {
-            console.log('element founded');
+            console.log('test');
             const mouseLeaveHandler = () => {
-              console.log('mouse leave event');
               // Check if the modal is already open
               const modalElement = document.getElementById('modal');
               if (!modalElement) {
