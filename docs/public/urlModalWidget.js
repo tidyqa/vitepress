@@ -157,12 +157,12 @@
 
     links.forEach((link) => {
       link.addEventListener('click', () => {
-        modalWidget.closeModal();
+        this.closeModal();
       });
     });
 
     window.addEventListener('popstate', () => {
-      modalWidget.closeModal();
+      this.closeModal();
     });
   };
 
