@@ -125,16 +125,16 @@
 
           if (specificElement) {
             console.log('Element found');
-            const mouseOverHandler = () => {
+            const mouseLeaveHandler = () => {
               // Check if the modal is already open
               const modalElement = document.getElementById('modal');
               if (!modalElement) {
                 this.openModalWithMessage(elementMessage.elementId);
-                specificElement.removeEventListener('mouseover', mouseOverHandler);
+                specificElement.removeEventListener('mouseleave', mouseLeaveHandler);
               }
             };
 
-            specificElement.addEventListener('mouseover', mouseOverHandler);
+            specificElement.addEventListener('mouseleave', mouseLeaveHandler);
           }
         }
       });
