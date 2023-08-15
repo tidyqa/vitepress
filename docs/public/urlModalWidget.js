@@ -1,4 +1,5 @@
 (function () {
+  const currentURL = window.location.href;
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     urlMessages: [
@@ -70,7 +71,7 @@
 
     // Extended openModalWithMessage function
     openModalWithMessage: function (elementId) {
-      const currentURL = window.location.href;
+      //const currentURL = window.location.href;
 
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
@@ -121,7 +122,7 @@
 
     // Function to hide the modal for this page
     hideModalForPage: function () {
-      const currentURL = window.location.href;
+      //const currentURL = window.location.href;
       localStorage.setItem('urlModalWidget_' + currentURL, 'true');
       this.closeModal();
       console.log(`Modal hidden for URL ${currentURL}`);
@@ -129,23 +130,25 @@
 
     bindModalToElements: function () {
       console.log(window.location);
-      const currentURL = window.location.href;
+      //const currentURL = window.location.href;
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
       );
 
       if (!isModalHidden) {
+        console.log('Modal not hidden');
         const matchedMessage = this.urlMessages.find(
           (urlMessage) => urlMessage.url === currentURL
         );
 
         if (matchedMessage) {
+          console.log('URL Match');
           const specificElement = document.querySelector(
             `#${matchedMessage.elementId}`
           );
 
           if (specificElement) {
-            console.log('test');
+            console.log('Element found');
             const mouseLeaveHandler = () => {
               // Check if the modal is already open
               const modalElement = document.getElementById('modal');
@@ -165,6 +168,7 @@
     },
     // Initialize the modal widget
     initialize: function () {
+      console.log('Initialized');
       this.bindModalToElements();
       this.addLinkAndBackListeners();
     },
