@@ -119,24 +119,27 @@
     bindModalToElements: function () {
       console.log('bindModalToElements OK');
 
-      for (const elementMessage of this.elementMessages) {
-        const specificElement = document.getElementById(elementMessage.elementId);
+      document.addEventListener('DOMContentLoaded', () => {
+        for (const elementMessage of this.elementMessages) {
+          const specificElement = document.getElementById(elementMessage.elementId);
 
-        if (specificElement) {
-          console.log('Element found');
-          const mouseEnterHandler = () => {
-            // Check if the modal is already open
-            const modalElement = document.getElementById('modal');
-            if (!modalElement) {
-              this.openModalWithMessage(elementMessage.elementId);
-              specificElement.removeEventListener('mouseenter', mouseEnterHandler);
-            }
-          };
+          if (specificElement) {
+            console.log('Element found');
+            const mouseOverHandler = () => {
+              // Check if the modal is already open
+              const modalElement = document.getElementById('modal');
+              if (!modalElement) {
+                this.openModalWithMessage(elementMessage.elementId);
+                specificElement.removeEventListener('mouseover', mouseOverHandler);
+              }
+            };
 
-          specificElement.addEventListener('mouseenter', mouseEnterHandler);
+            specificElement.addEventListener('mouseover', mouseOverHandler);
+          }
         }
-      }
+      });
     },
+
 
     // Initialize the modal widget
     initialize: function () {
