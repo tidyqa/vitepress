@@ -65,17 +65,17 @@
         }
     `,
 
-  // Extended openModalWithMessage function
-  openModalWithMessage: function (elementId) {
-    const matchedMessage = this.elementMessages.find(
-      (elementMessage) => elementMessage.elementId === elementId
-    );
+    // Extended openModalWithMessage function
+    openModalWithMessage: function (elementId) {
+      const matchedMessage = this.elementMessages.find(
+        (elementMessage) => elementMessage.elementId === elementId
+      );
 
-    if (matchedMessage) {
-      const modal = document.createElement('div');
-      modal.id = 'modal';
-      modal.className = 'modal';
-      modal.innerHTML = `
+      if (matchedMessage) {
+        const modal = document.createElement('div');
+        modal.id = 'modal';
+        modal.className = 'modal';
+        modal.innerHTML = `
         <style>${this.modalStyles}</style>
         <p>${matchedMessage.message}</p>
         <div class="button-container">
@@ -83,20 +83,20 @@
         </div>
       `;
 
-      document.body.appendChild(modal);
+        document.body.appendChild(modal);
 
-      const modalElement = document.getElementById('modal');
-      modalElement.style.display = 'block';
-      modalElement.classList.add(`modal-${this.modalSettings.position}`);
+        const modalElement = document.getElementById('modal');
+        modalElement.style.display = 'block';
+        modalElement.classList.add(`modal-${this.modalSettings.position}`);
 
-      // Add event listeners to the hide buttons
-      const hideButton = modalElement.querySelector('.hide-page-button');
+        // Add event listeners to the hide buttons
+        const hideButton = modalElement.querySelector('.hide-page-button');
 
-      hideButton.addEventListener('click', () => {
-        this.hideModalForPage(elementId);
-      });
-    }
-  },
+        hideButton.addEventListener('click', () => {
+          this.hideModalForPage(elementId);
+        });
+      }
+    },
 
     // Function to close the modal (same as provided)
     closeModal: function () {
@@ -122,9 +122,15 @@
     bindModalToElements: function () {
       console.log('bindModalToElements OK');
 
+      window.addEventListener('popstate', () => {
+        this.closeModal();
+      });
+
       document.addEventListener('DOMContentLoaded', () => {
         for (const elementMessage of this.elementMessages) {
-          const specificElement = document.getElementById(elementMessage.elementId);
+          const specificElement = document.getElementById(
+            elementMessage.elementId
+          );
 
           if (specificElement) {
             console.log('Element found');
@@ -136,18 +142,20 @@
               }
             };
 
-            specificElement.addEventListener('mouseover', this.mouseOverHandler);
+            specificElement.addEventListener(
+              'mouseover',
+              this.mouseOverHandler
+            );
           }
         }
       });
     },
 
-
     // Initialize the modal widget
     initialize: function () {
       console.log('Initialized');
-      this.bindModalToElements();
       this.addLinkAndBackListeners();
+      this.bindModalToElements();
     },
   };
 
