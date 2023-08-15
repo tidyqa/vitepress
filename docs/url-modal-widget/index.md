@@ -8,7 +8,6 @@ head:
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/url-modal-widget/' }] 
   - ['meta', {name: 'twitter:title', content: 'URL-Based Modal Widget'}]
   - ['link', {rel: 'canonical', href: 'https://tidyqa.com/url-modal-widget/'}]
-  - ['link', {rel: 'prefetch', href: 'https://tidyqa.com/snippets/urlModalWidget.js'}]
 ---
 
 # URL Modal Widget
