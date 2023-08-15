@@ -65,55 +65,58 @@
         }
     `,
 
-    // Extended openModalWithMessage function
-    openModalWithMessage: function (elementId) {
-      const matchedMessage = this.elementMessages.find(
-        (elementMessage) => elementMessage.elementId === elementId
-      );
+  // Extended openModalWithMessage function
+  openModalWithMessage: function (elementId) {
+    const matchedMessage = this.elementMessages.find(
+      (elementMessage) => elementMessage.elementId === elementId
+    );
 
-      if (matchedMessage) {
-        const modal = document.createElement('div');
-        modal.id = 'modal';
-        modal.className = 'modal';
-        modal.innerHTML = `
-          <style>${this.modalStyles}</style>
-          <p>${matchedMessage.message}</p>
-          <div class="button-container">
-              <button class="hide-page-button">Hide for this page</button>
-          </div>
-        `;
+    if (matchedMessage) {
+      const modal = document.createElement('div');
+      modal.id = 'modal';
+      modal.className = 'modal';
+      modal.innerHTML = `
+        <style>${this.modalStyles}</style>
+        <p>${matchedMessage.message}</p>
+        <div class="button-container">
+            <button class="hide-page-button">Hide for this page</button>
+        </div>
+      `;
 
-        document.body.appendChild(modal);
+      document.body.appendChild(modal);
 
-        const modalElement = document.getElementById('modal');
-        modalElement.style.display = 'block';
-        modalElement.classList.add(`modal-${this.modalSettings.position}`);
+      const modalElement = document.getElementById('modal');
+      modalElement.style.display = 'block';
+      modalElement.classList.add(`modal-${this.modalSettings.position}`);
 
-        // Add event listeners to the hide buttons
-        const hideButton = modalElement.querySelector('.hide-page-button');
+      // Add event listeners to the hide buttons
+      const hideButton = modalElement.querySelector('.hide-page-button');
 
-        hideButton.addEventListener('click', () => {
-          this.hideModalForPage();
-        });
-      }
-    },
+      hideButton.addEventListener('click', () => {
+        this.hideModalForPage(elementId);
+      });
+    }
+  },
 
-    // Function to close the modal
+    // Function to close the modal (same as provided)
     closeModal: function () {
       const modalElement = document.getElementById('modal');
       if (modalElement) {
         modalElement.style.display = 'none';
-        modalElement.remove(); // Add this line to remove the modal element
+        modalElement.remove();
         console.log(`Modal closed`);
       }
     },
 
     // Function to hide the modal for this page
-    hideModalForPage: function () {
-      //const currentURL = window.location.href;
-      localStorage.setItem('urlModalWidget_' + currentURL, 'true');
+    hideModalForPage: function (elementId) {
+      const specificElement = document.getElementById(elementId);
+      if (specificElement) {
+        specificElement.removeEventListener('mouseover', this.mouseOverHandler);
+      }
+
       this.closeModal();
-      console.log(`Modal hidden for URL ${currentURL}`);
+      console.log(`Modal hidden for element ${elementId}`);
     },
 
     bindModalToElements: function () {
@@ -125,16 +128,15 @@
 
           if (specificElement) {
             console.log('Element found');
-            const mouseLeaveHandler = () => {
+            this.mouseOverHandler = () => {
               // Check if the modal is already open
               const modalElement = document.getElementById('modal');
               if (!modalElement) {
                 this.openModalWithMessage(elementMessage.elementId);
-                specificElement.removeEventListener('mouseleave', mouseLeaveHandler);
               }
             };
 
-            specificElement.addEventListener('mouseleave', mouseLeaveHandler);
+            specificElement.addEventListener('mouseover', this.mouseOverHandler);
           }
         }
       });
