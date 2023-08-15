@@ -1,7 +1,7 @@
 (function () {
-  document.addEventListener('DOMContentLoaded', function () {
+
     const currentURL = window.location.href;
-  });
+
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     urlMessages: [
