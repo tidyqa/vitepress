@@ -1,4 +1,5 @@
 (function () {
+  const currentURL = window.location.href;
   const modalWidget = {
     // Array of URLs to match with corresponding messages
     urlMessages: [
@@ -128,19 +129,21 @@
     },
 
     bindModalToElements: function () {
-      const currentURL = window.location.href;
-      const isModalHidden = localStorage.getItem('urlModalWidget_' + currentURL);
-  
+      //const currentURL = window.location.href;
+      const isModalHidden = localStorage.getItem(
+        'urlModalWidget_' + currentURL
+      );
+
       if (!isModalHidden) {
         const matchedMessage = this.urlMessages.find(
           (urlMessage) => urlMessage.url === currentURL
         );
-  
+
         if (matchedMessage) {
           const specificElement = document.querySelector(
             `#${matchedMessage.elementId}`
           );
-  
+
           if (specificElement) {
             const mouseLeaveHandler = () => {
               if (!this.isModalOpen) {
@@ -151,7 +154,7 @@
                 );
               }
             };
-  
+
             specificElement.addEventListener('mouseleave', mouseLeaveHandler);
           }
         }
@@ -164,7 +167,6 @@
       this.addLinkAndBackListeners();
     },
   };
-
 
   // Add event listener for clicks on links and the popstate event (going back in history)
   modalWidget.addLinkAndBackListeners = function () {
