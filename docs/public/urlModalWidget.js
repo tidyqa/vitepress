@@ -177,47 +177,49 @@
   // Initialize the modal widget
   modalWidget.initialize();
 
-
   function generateSlug(keyword) {
     // Convert keyword to lowercase and replace spaces with hyphens
     const slug = keyword.toLowerCase().replace(/ /g, '-');
-    
+
     // Remove non-alphanumeric characters except hyphens
     const cleanedSlug = slug.replace(/[^a-zA-Z0-9-]/g, '');
-    
-    return cleanedSlug;
-}
 
-function createLink(slug, keyword) {
+    return cleanedSlug;
+  }
+
+  function createLink(slug, keyword) {
     const link = document.createElement('a');
     link.href = `/articles/${slug}`;
     link.textContent = keyword;
-    
+
     return link;
-}
+  }
 
-function replaceKeywordsWithLinks(container, keywords) {
+  function replaceKeywordsWithLinks(container, keywords) {
     const contentElement = document.querySelector(container);
-    const paragraph = contentElement.querySelector('p');
-    
-    keywords.forEach(keyword => {
-        const slug = generateSlug(keyword);
-        const regex = new RegExp('\\b' + keyword + '\\b', 'gi');
-        paragraph.innerHTML = paragraph.innerHTML.replace(regex, match => {
-            return createLink(slug, match).outerHTML;
-        });
+
+    keywords.forEach((keyword) => {
+      const slug = generateSlug(keyword);
+      const regex = new RegExp('\\b' + keyword + '\\b', 'gi');
+      contentElement.innerHTML = contentElement.innerHTML.replace(
+        regex,
+        (match) => {
+          return createLink(slug, match).outerHTML;
+        }
+      );
     });
-}
+  }
 
-// Example array of longtail keywords and their corresponding slugs
-const longtailKeywords = [
-    { keyword: "ensuring everyone", slug: "best-hiking-trails" },
-    { keyword: "Implement smooth", slug: "healthy-cooking-recipes" },
-    { keyword: "Based Modal Widget", slug: "beginners-guide-to-gardening" }
-];
+  // Example array of longtail keywords and their corresponding slugs
+  const longtailKeywords = [
+    { keyword: 'ensuring everyone', slug: 'best-hiking-trails' },
+    { keyword: 'Implement smooth', slug: 'healthy-cooking-recipes' },
+    { keyword: 'Based Modal Widget', slug: 'beginners-guide-to-gardening' },
+  ];
 
-// Replace keywords with links within the specified div class
-replaceKeywordsWithLinks('.main', longtailKeywords.map(item => item.keyword));
-
-
+  // Replace keywords with links within the specified div class
+  replaceKeywordsWithLinks(
+    '.main',
+    longtailKeywords.map((item) => item.keyword)
+  );
 })();
