@@ -128,6 +128,7 @@
     },
 
     bindModalToElements: function () {
+      console.log('bindModalToElements OK');
       const currentURL = window.location.href;
       const isModalHidden = localStorage.getItem(
         'urlModalWidget_' + currentURL
@@ -144,15 +145,17 @@
           );
 
           if (specificElement) {
+            console.log('element founded');
             const mouseLeaveHandler = () => {
+              console.log('mouse leave event');
               // Check if the modal is already open
               const modalElement = document.getElementById('modal');
               if (!modalElement) {
                 this.openModalWithMessage(matchedMessage.elementId);
-                // specificElement.removeEventListener(
-                //   'mouseleave',
-                //   mouseLeaveHandler
-                // );
+                specificElement.removeEventListener(
+                  'mouseleave',
+                  mouseLeaveHandler
+                );
               }
             };
 
