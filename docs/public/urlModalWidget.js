@@ -1,6 +1,6 @@
 (function () {
   const modalWidget = {
-    // Array of URLs to match with corresponding messages
+    // Array of element IDs to match with corresponding messages
     elementMessages: [
       {
         elementId: 'what-you-ll-learn',
@@ -76,12 +76,12 @@
         modal.id = 'modal';
         modal.className = 'modal';
         modal.innerHTML = `
-      <style>${this.modalStyles}</style>
-      <p>${matchedMessage.message}</p>
-      <div class="button-container">
-          <button class="hide-page-button">Hide for this page</button>
-      </div>
-    `;
+          <style>${this.modalStyles}</style>
+          <p>${matchedMessage.message}</p>
+          <div class="button-container">
+              <button class="hide-page-button">Hide for this page</button>
+          </div>
+        `;
 
         document.body.appendChild(modal);
 
@@ -119,14 +119,8 @@
     bindModalToElements: function () {
       console.log('bindModalToElements OK');
 
-      const matchedMessage = this.elementMessages.find(
-        (elementMessage) => elementMessage.elementId === currentElementId
-      );
-
-      if (matchedMessage) {
-        const specificElement = document.getElementById(
-          matchedMessage.elementId
-        );
+      for (const elementMessage of this.elementMessages) {
+        const specificElement = document.getElementById(elementMessage.elementId);
 
         if (specificElement) {
           console.log('Element found');
@@ -134,11 +128,8 @@
             // Check if the modal is already open
             const modalElement = document.getElementById('modal');
             if (!modalElement) {
-              this.openModalWithMessage(matchedMessage.elementId);
-              specificElement.removeEventListener(
-                'mouseenter',
-                mouseEnterHandler
-              );
+              this.openModalWithMessage(elementMessage.elementId);
+              specificElement.removeEventListener('mouseenter', mouseEnterHandler);
             }
           };
 
