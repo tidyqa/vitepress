@@ -13,7 +13,7 @@
         message: 'Modal for Demo Page!',
       },
       {
-        url: 'https://tidyqa.com/installation/',
+        url: 'https://tidyqa.com/url-modal-widget/installation/',
         elementId: 'installation',
         message: 'Modal for Installation Page!',
       },
@@ -127,6 +127,37 @@
       console.log(`Modal hidden for URL ${currentURL}`);
     },
 
+    bindModalToElements: function () {
+      const currentURL = window.location.href;
+      const isModalHidden = localStorage.getItem('urlModalWidget_' + currentURL);
+  
+      if (!isModalHidden) {
+        const matchedMessage = this.urlMessages.find(
+          (urlMessage) => urlMessage.url === currentURL
+        );
+  
+        if (matchedMessage) {
+          const specificElement = document.querySelector(
+            `#${matchedMessage.elementId}`
+          );
+  
+          if (specificElement) {
+            const mouseLeaveHandler = () => {
+              if (!this.isModalOpen) {
+                this.openModalWithMessage(matchedMessage.elementId);
+                specificElement.removeEventListener(
+                  'mouseleave',
+                  mouseLeaveHandler
+                );
+              }
+            };
+  
+            specificElement.addEventListener('mouseleave', mouseLeaveHandler);
+          }
+        }
+      }
+    },
+
     // Initialize the modal widget
     initialize: function () {
       this.bindModalToElements();
@@ -134,37 +165,6 @@
     },
   };
 
-  // Modify bindModalToElements to display the modal on mouseleave
-  modalWidget.bindModalToElements = function () {
-    const currentURL = window.location.href;
-    const isModalHidden = localStorage.getItem('urlModalWidget_' + currentURL);
-
-    if (!isModalHidden) {
-      const matchedMessage = this.urlMessages.find(
-        (urlMessage) => urlMessage.url === currentURL
-      );
-
-      if (matchedMessage) {
-        const specificElement = document.querySelector(
-          `#${matchedMessage.elementId}`
-        );
-
-        if (specificElement) {
-          const mouseLeaveHandler = () => {
-            if (!this.isModalOpen) {
-              this.openModalWithMessage(matchedMessage.elementId);
-              specificElement.removeEventListener(
-                'mouseleave',
-                mouseLeaveHandler
-              );
-            }
-          };
-
-          specificElement.addEventListener('mouseleave', mouseLeaveHandler);
-        }
-      }
-    }
-  };
 
   // Add event listener for clicks on links and the popstate event (going back in history)
   modalWidget.addLinkAndBackListeners = function () {
