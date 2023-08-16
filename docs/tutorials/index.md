@@ -10,7 +10,7 @@ head:
 
 hero:
   name: Tutorials
-  tagline: Basics of HTML, CSS, and Javascript. Things that I have learned and I want to share.
+  tagline: Basics of HTML, CSS, and JavaScript. Things that I have learned and I want to share.
 
 features:
   - title: TidyQA Simple Bug Tracker
