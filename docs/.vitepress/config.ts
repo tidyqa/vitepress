@@ -93,7 +93,7 @@ export default defineConfig({
           items: [
             {
               text: 'Introduction to HTML',
-              link: '/html/introduction/',
+              link: '/html/introduction',
             },
           ],
         },
