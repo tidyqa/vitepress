@@ -16,9 +16,9 @@ Hello, I'm Bruno, and I appreciate you taking the time to visit!
 
 **Here are a few lines to introduce myself:**
 
-- I was born, currently live, and work in Split. I began my journey as a freelancer and have now secured a position as a Software QA Tester, a role I am truly passionate about.
-- I take pleasure in engaging in outdoor workouts, such as uphill sprints, bodyweight exercises, and leisurely walks. These activities play a pivotal role in keeping any discomfort at bay.
-- Additionally, I am dedicated to assisting individuals in maintaining their physical well-being. I educate others on exercises that can greatly enhance overall health and fitness.
+- I began my journey as a freelancer and have now secured a position as a Software QA Tester, a role I am truly passionate about.
+- I take pleasure in engaging in outdoor workouts, such as uphill sprints, bodyweight exercises, and leisurely walks.
+- I educate others on exercises that can greatly enhance overall health and fitness.
 
 ## Knowledge
 

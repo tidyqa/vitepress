@@ -14,26 +14,11 @@ head:
 
 HTML (HyperText Markup Language) is the standard markup language used to create and structure content on the web. In this tutorial, we'll guide you through the basics of HTML, from creating a simple webpage to understanding key elements and attributes.
 
-## Table of Contents
-
-1. Introduction to HTML
-2. Setting Up Your First HTML Document
-3. HTML Document Structure
-4. Headings and Paragraphs
-5. Links and Anchors
-6. Lists
-7. Images
-8. Basic Styling with CSS
-9. Forms and Input Elements
-10. HTML Semantics
-11. Creating a Simple Webpage
-12. Advanced HTML Features (optional)
-
 ## Introduction to HTML
 
 HTML is the foundation of any webpage. It uses a series of elements and tags to structure content and provide meaning to different parts of a webpage. HTML is not a programming language but a markup language.
 
-## Setting Up Your First HTML Document
+## Setting Up HTML Document
 
 To get started, you need a text editor to write your HTML code and a web browser to view the result. Here's a simple template to create your first HTML document:
 
@@ -65,8 +50,6 @@ Let's break down the structure of the template:
 
 Headings and paragraphs are fundamental for structuring content. HTML provides six levels of headings, from `<h1>` (highest) to `<h6>` (lowest). Paragraphs are created using the `<p>` tag.
 
-Example:
-
 ```html
 <h1>Welcome to My Webpage</h1>
 <p>This is a simple example of a paragraph.</p>
@@ -76,8 +59,6 @@ Example:
 
 Links are used to navigate between webpages. They are created using the `<a>` (anchor) tag, and the `href` attribute specifies the URL.
 
-Example:
-
 ```html
 <a href="https://www.example.com">Visit Example.com</a>
 ```
@@ -85,8 +66,6 @@ Example:
 ## Lists
 
 Lists help organize content into ordered (numbered) or unordered (bulleted) lists.
-
-Example:
 
 ```html
 <ul>
@@ -104,8 +83,6 @@ Example:
 
 You can include images using the `<img>` tag. The `src` attribute specifies the image file's URL.
 
-Example:
-
 ```html
 <img src="image.jpg" alt="Description of the image">
 ```
@@ -113,8 +90,6 @@ Example:
 ## Basic Styling with CSS
 
 Cascading Style Sheets (CSS) allow you to style your HTML elements. Include a `<style>` tag within the `<head>` section.
-
-Example:
 
 ```html
 <head>
@@ -131,8 +106,6 @@ Example:
 
 Forms gather user input. Use `<form>` for the overall form and various input elements like `<input>` and `<textarea>`.
 
-Example:
-
 ```html
 <form>
   <label for="username">Username:</label>
@@ -144,8 +117,6 @@ Example:
 ## HTML Semantics
 
 HTML5 introduced semantic elements that give meaning to the structure of a webpage, aiding accessibility and SEO.
-
-Example:
 
 ```html
 <header>
@@ -189,7 +160,7 @@ Combine the elements we've learned to create a simple webpage:
 </html>
 ```
 
-## Advanced HTML Features (optional)
+## Advanced HTML Features
 
 Explore more advanced features like tables, iframes, audio, video, and more as you become comfortable with the basics.
 
