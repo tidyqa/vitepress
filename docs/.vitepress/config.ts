@@ -95,6 +95,14 @@ export default defineConfig({
               text: 'Introduction to HTML',
               link: '/html/introduction/',
             },
+            {
+              text: 'Setting Up Your HTML Document',
+              link: '/html/setting-up-html-document/',
+            },
+            {
+              text: 'HTML Document Structure',
+              link: '/html/document-structure/',
+            },
           ],
         },
       ],

@@ -2,7 +2,7 @@
 layout: doc
 last Updated: true
 title: Setting Up HTML Document - HTML Tutorial
-description: A Beginner's Guide to Creating Web Content. Learn how to structure webpages, add headings, paragraphs, links, images, and lists. Explore HTML semantics, styling with CSS, and forms for user interaction.
+description: Learn to create your first HTML document, structure your content using essential elements like <!DOCTYPE html>, <html>, <head>, <title>, and <body>.
 head:
   - ['meta', {property: 'og:title', content:  'Setting Up HTML Document - HTML Tutorial' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/html/setting-up-html-document/' }] 
