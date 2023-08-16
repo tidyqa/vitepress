@@ -18,5 +18,5 @@ features:
     link: /simple-bug-tracker/
   - title: HTML Tutorial
     details: Learn how to structure webpages, add headings, paragraphs, links, images, and lists.
-    link: /html-tutorial/
+    link: /html/
 ---
