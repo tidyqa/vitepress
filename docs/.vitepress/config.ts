@@ -17,7 +17,7 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
     //['link', { rel: 'prefetch', href: '/files/urlModalWidget.js' }],
-  ['script', { src: '/urlModalWidget.js' }],
+  //['script', { src: '/urlModalWidget.js' }],
   ],
   //cleanUrls: true,
   themeConfig: {
@@ -85,23 +85,37 @@ export default defineConfig({
         },
       ],
 
-      '/url-modal-widget/': [
+            '/html/': [
         {
-          text: 'URL Modal Widget',
-          link: '/url-modal-widget/',
+          text: 'HTML Tutorial',
+          link: '/html/',
           //collapsed: false,
           items: [
             {
-              text: 'Installation',
-              link: '/url-modal-widget/installation/',
-            },
-            {
-              text: 'Demo',
-              link: '/url-modal-widget/demo/',
+              text: 'Introduction to HTML',
+              link: '/html/introduction/',
             },
           ],
         },
       ],
+
+      // '/url-modal-widget/': [
+      //   {
+      //     text: 'URL Modal Widget',
+      //     link: '/url-modal-widget/',
+      //     //collapsed: false,
+      //     items: [
+      //       {
+      //         text: 'Installation',
+      //         link: '/url-modal-widget/installation/',
+      //       },
+      //       {
+      //         text: 'Demo',
+      //         link: '/url-modal-widget/demo/',
+      //       },
+      //     ],
+      //   },
+      // ],
     },
   },
 });

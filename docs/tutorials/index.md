@@ -10,10 +10,13 @@ head:
 
 hero:
   name: Tutorials
-  tagline: Things that I have learned and I want to share.
+  tagline: Basics of HTML, CSS, and Javascript. Things that I have learned and I want to share.
 
 features:
   - title: TidyQA Simple Bug Tracker
     details: Chrome extension designed to simplify your bug tracking experience while you browse the web.
     link: /simple-bug-tracker/
+  - title: HTML Tutorial
+    details: Learn how to structure webpages, add headings, paragraphs, links, images, and lists.
+    link: /html-tutorial/
 ---
