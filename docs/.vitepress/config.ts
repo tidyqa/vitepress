@@ -17,7 +17,7 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', type: 'image/png', href: '/files/favicon.png' }],
     //['link', { rel: 'prefetch', href: '/files/urlModalWidget.js' }],
-  //['script', { src: '/urlModalWidget.js' }],
+    //['script', { src: '/urlModalWidget.js' }],
   ],
   //cleanUrls: true,
   themeConfig: {
@@ -85,7 +85,7 @@ export default defineConfig({
         },
       ],
 
-            '/html/': [
+      '/html/': [
         {
           text: 'HTML Tutorial',
           link: '/html/',
@@ -93,7 +93,7 @@ export default defineConfig({
           items: [
             {
               text: 'Introduction to HTML',
-              link: '/html/introduction',
+              link: '/html/introduction/',
             },
           ],
         },
