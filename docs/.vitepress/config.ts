@@ -103,6 +103,10 @@ export default defineConfig({
               text: 'HTML Document Structure',
               link: '/html/document-structure/',
             },
+            {
+              text: 'Headings and Paragraphs',
+              link: '/html/headings-and-paragraphs/',
+            },
           ],
         },
       ],
