@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Creating a Simple Webpage - HTML Tutorial
-description: Explore interactive user experiences with our Forms and Input Elements tutorial. Learn to create dynamic web interactions using HTML's <form> and <input> elements.
+description:  Apply your acquired HTML skills to craft a complete webpage, incorporating headers, navigation, main content, and a footer.
 head:
   - ['meta', {property: 'og:title', content:  'Creating a Simple Webpage - HTML Tutorial' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/html/creating-simple-webpage/' }] 
