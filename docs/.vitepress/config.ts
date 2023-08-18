@@ -123,6 +123,22 @@ export default defineConfig({
               text: 'Basic Styling with CSS',
               link: '/html/basic-styling-with-css/',
             },
+            {
+              text: 'Forms and Input Elements',
+              link: '/html/forms-and-input-elements/',
+            },
+            {
+              text: 'HTML Semantics',
+              link: '/html/semantics/',
+            },
+            {
+              text: 'Creating a Simple Webpage',
+              link: '/html/creating-simple-webpage/',
+            },
+            {
+              text: 'Advanced HTML Features',
+              link: '/html/advanced-features/',
+            },
           ],
         },
       ],
