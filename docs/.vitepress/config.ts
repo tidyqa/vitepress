@@ -139,6 +139,10 @@ export default defineConfig({
               text: 'Advanced HTML Features',
               link: '/html/advanced-features/',
             },
+            {
+              text: 'Continuing Your Web Development Journey',
+              link: '/html/next-steps/',
+            },
           ],
         },
       ],
