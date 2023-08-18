@@ -107,6 +107,14 @@ export default defineConfig({
               text: 'Headings and Paragraphs',
               link: '/html/headings-and-paragraphs/',
             },
+            {
+              text: 'Links and Anchors',
+              link: '/html/links-and-anchors/',
+            },
+            {
+              text: 'Lists',
+              link: '/html/lists/',
+            },
           ],
         },
       ],
