@@ -14,7 +14,7 @@ head:
 
 In this section, we'll delve into the power of headings and paragraphs – two fundamental HTML elements that enable you to structure and present your content effectively.
 
-## Using Headings `<h1>` to `<h6>`
+## Using Headings
 
 Headings play a crucial role in organizing content hierarchically. HTML offers six levels of headings, from `<h1>` (the highest) to `<h6>` (the lowest). These headings not only help users navigate your content but also provide important cues to search engines about the structure and relevance of your page.
 
@@ -27,7 +27,7 @@ Headings play a crucial role in organizing content hierarchically. HTML offers s
 <!-- ...and so on -->
 ```
 
-## Clear Paragraphs `<p>`
+## Clear Paragraphs
 
 Paragraphs are the backbone of textual content on the web. The `<p>` element is used to create paragraphs of text, allowing you to present information in a coherent and readable manner. Whether you're sharing a story, describing a product, or providing educational content, paragraphs are your go-to tool.
 

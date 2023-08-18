@@ -115,6 +115,14 @@ export default defineConfig({
               text: 'Lists',
               link: '/html/lists/',
             },
+            {
+              text: 'Images',
+              link: '/html/images/',
+            },
+            {
+              text: 'Basic Styling with CSS',
+              link: '/html/basic-styling-with-css/',
+            },
           ],
         },
       ],

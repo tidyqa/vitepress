@@ -14,23 +14,23 @@ head:
 
 In this section, we'll delve into the foundational structure of an HTML document. Understanding how an HTML page is organized is crucial for creating well-structured and readable web content.
 
-## The Root Element: `<html>`
+## The Root Element
 
 Every HTML document starts with the `<html>` element, which serves as the root of the document tree. This element contains all other elements on the page and acts as a container for the entire content.
 
-## Document Type Declaration: `<!DOCTYPE html>`
+## Document Type Declaration
 
 The `<!DOCTYPE html>` declaration, placed at the beginning of the document, specifies the type and version of HTML being used. It helps browsers correctly interpret and render the content.
 
-## Head and Metadata: `<head>`
+## Head and Metadata
 
 The `<head>` section is where you provide metadata about the document, such as the title of the webpage, character encoding, and links to external resources like stylesheets and scripts. While the content within the `<head>` section isn't directly visible to users, it plays a crucial role in optimizing your webpage for search engines and improving user experience.
 
-## Page Title: `<title>`
+## Page Title
 
 Within the `<head>` section, the `<title>` element sets the title of the webpage, which is displayed in the browser's title bar or tab. Crafting a descriptive and relevant title is essential for both SEO (Search Engine Optimization) and helping users understand the content of your page.
 
-## Main Content Area: `<body>`
+## Main Content Area
 
 The `<body>` section contains the primary content of your webpage, including text, images, links, and other elements. This is where users interact with your content, and it's essential to structure it logically for easy reading and navigation.
 
