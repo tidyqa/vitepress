@@ -12,7 +12,7 @@ head:
 
 # Links and Anchors
 
-Welcome to the world of interconnected web content! In this section, we'll dive into the art of creating links and anchors, empowering you to connect your webpages and provide seamless navigation for your users.
+Dive into the art of creating links and anchors, empowering you to connect your webpages and provide seamless navigation for your users.
 
 ## Introducing Links
 

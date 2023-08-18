@@ -12,7 +12,7 @@ head:
 
 # HTML Document Structure
 
-In this section, we'll delve into the foundational structure of an HTML document. Understanding how an HTML page is organized is crucial for creating well-structured and readable web content.
+Understanding how an HTML page is organized is crucial for creating well-structured and readable web content.
 
 ## The Root Element
 

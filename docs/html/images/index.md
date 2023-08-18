@@ -12,7 +12,7 @@ head:
 
 # Images
 
-Welcome to the visual dimension of web development! In this section, we'll explore the captivating world of images – a powerful tool for enhancing the aesthetics and engagement of your webpages.
+Explore the captivating world of images – a powerful tool for enhancing the aesthetics and engagement of your webpages.
 
 ## Inserting Images
 

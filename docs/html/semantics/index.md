@@ -11,7 +11,7 @@ head:
 
 # HTML Semantics
 
-Welcome to the world of meaningful structure! In this section, we'll dive into HTML semantics – the art of using semantic elements to add context and significance to your web content.
+Welcome to the world of meaningful structure – the art of using semantic elements to add context and significance to your web content.
 
 ## Understanding Semantics
 

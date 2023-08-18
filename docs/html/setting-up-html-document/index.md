@@ -12,7 +12,7 @@ head:
 
 # Setting Up HTML Document
 
-In this section, we'll guide you through the process of creating your very first HTML document. We'll cover the essential elements needed to set up a basic webpage, and by the end, you'll have a solid understanding of how to structure your content using HTML.
+Essential elements needed to set up a basic webpage, and by the end, you'll have a solid understanding of how to structure your content using HTML.
 
 ## Text Editors and Web Browsers
 

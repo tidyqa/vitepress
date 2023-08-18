@@ -11,7 +11,7 @@ head:
 
 # Forms and Input Elements
 
-In this section, we'll explore the dynamic world of forms and input elements – essential components for gathering user input and creating interactive web experiences.
+We'll explore the dynamic world of forms and input elements – essential components for gathering user input and creating interactive web experiences.
 
 ## Introducing Forms
 

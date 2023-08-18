@@ -12,7 +12,7 @@ head:
 
 # Lists
 
-Welcome to the realm of structured content presentation! In this section, we'll explore the power of lists – an essential HTML feature that allows you to organize information in a clear and visually appealing manner.
+Power of lists – an essential HTML feature that allows you to organize information in a clear and visually appealing manner.
 
 ## Unordered Lists
 

@@ -12,7 +12,7 @@ head:
 
 # Basic Styling with CSS
 
-Welcome to the world of design and aesthetics! In this section, we'll introduce you to Cascading Style Sheets (CSS), a powerful tool for adding style, layout, and visual appeal to your HTML content.
+In this section, we'll introduce you to Cascading Style Sheets (CSS), a powerful tool for adding style, layout, and visual appeal to your HTML content.
 
 ## What is CSS?
 

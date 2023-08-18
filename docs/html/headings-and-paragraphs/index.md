@@ -12,7 +12,7 @@ head:
 
 # Headings and Paragraphs
 
-In this section, we'll delve into the power of headings and paragraphs – two fundamental HTML elements that enable you to structure and present your content effectively.
+Two fundamental HTML elements that enable you to structure and present your content effectively.
 
 ## Using Headings
 
