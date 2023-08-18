@@ -147,6 +147,24 @@ export default defineConfig({
         },
       ],
 
+      '/css/': [
+        {
+          text: 'CSS Tutorial',
+          link: '/css/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Introduction to CSS',
+              link: '/css/introduction/',
+            },
+            {
+              text: 'CSS Syntax',
+              link: '/css/syntax/',
+            },
+          ],
+        },
+      ],
+
       // '/url-modal-widget/': [
       //   {
       //     text: 'URL Modal Widget',
