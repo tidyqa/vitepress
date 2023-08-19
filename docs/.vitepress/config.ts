@@ -11,6 +11,11 @@ export default defineConfig({
     hostname: 'https://tidyqa.com',
   },
 
+  editLink: {
+    pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path',
+    text: 'Edit this page on GitHub'
+  },
+
   head: [
     [
       'link',
