@@ -194,8 +194,3 @@ export default defineConfig({
 
   
 });
-
-
-export default {
-  lastUpdated: true
-}
