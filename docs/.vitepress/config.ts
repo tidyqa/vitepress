@@ -13,8 +13,7 @@ export default defineConfig({
   },
 
   editLink: {
-    pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path',
-    text: 'Edit this page on GitHub'
+    pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path'
   },
 
   head: [
