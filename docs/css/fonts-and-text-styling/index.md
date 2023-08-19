@@ -41,7 +41,7 @@ p {
 }
 ```
 
-## 3. Font Weight and Style
+## Font Weight and Style
 
 Font weight and style play a significant role in conveying emphasis and tone within your text. Utilize these properties to add visual weight or unique styling to specific portions of your content.
 
