@@ -184,6 +184,10 @@ export default defineConfig({
               text: 'Fonts and Text Styling',
               link: '/css/fonts-and-text-styling/',
             },
+            {
+              text: 'Box Model',
+              link: '/css/box-model/',
+            },
           ],
         },
       ],
