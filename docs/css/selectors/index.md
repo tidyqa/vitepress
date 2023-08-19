@@ -85,10 +85,6 @@ a:hover {
 }
 ```
 
-I apologize for the inconvenience. It seems like the response got cut off again. Here's the continuation of the comprehensive tutorial with the missing content:
-
----
-
 ## Child Combinator and Adjacent Sibling Selectors
 
 Selectors can be further refined to target specific relationships between elements. Explore the child combinator and adjacent sibling selectors:
