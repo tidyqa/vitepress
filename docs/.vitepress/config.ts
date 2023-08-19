@@ -172,6 +172,14 @@ export default defineConfig({
               text: 'Selectors',
               link: '/css/selectors/',
             },
+            {
+              text: 'Properties and Values',
+              link: '/css/properties-and-values/',
+            },
+            {
+              text: 'Basic Styling',
+              link: '/css/basic-styling/',
+            },
           ],
         },
       ],

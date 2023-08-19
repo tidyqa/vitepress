@@ -19,4 +19,7 @@ features:
   - title: HTML Tutorial
     details: Learn how to structure webpages, add headings, paragraphs, links, images, and lists.
     link: /html/
+  - title: CSS Tutorial
+    details: Learn how to style your web pages with Cascading Style Sheets through easy-to-follow tutorials.
+    link: /css/
 ---
