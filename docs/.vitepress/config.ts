@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
+  lastUpdated: true,
   lang: 'en-US',
   title: 'TidyQA',
   description:
@@ -161,6 +162,10 @@ export default defineConfig({
               text: 'CSS Syntax',
               link: '/css/syntax/',
             },
+            {
+              text: 'Selectors',
+              link: '/css/selectors/',
+            },
           ],
         },
       ],
@@ -184,4 +189,13 @@ export default defineConfig({
       // ],
     },
   },
+
+
+
+  
 });
+
+
+export default {
+  lastUpdated: true
+}

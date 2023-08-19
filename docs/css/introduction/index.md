@@ -53,18 +53,23 @@ selector {
 ## Basic Selectors
 
 - **Element Selector:** Selects all instances of a particular HTML element.
+
   ```css
   p {
     color: blue;
   }
   ```
+
 - **Class Selector:** Selects elements with a specific class attribute.
+
   ```css
   .button {
     background-color: green;
   }
   ```
+
 - **ID Selector:** Selects a single element by its unique ID attribute.
+
   ```css
   #header {
     font-size: 24px;
