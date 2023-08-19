@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress';
+//import { defineConfig } from 'vitepress';
+import { defineConfig, type DefaultTheme } from 'vitepress'
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
