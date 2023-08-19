@@ -180,6 +180,10 @@ export default defineConfig({
               text: 'Basic Styling',
               link: '/css/basic-styling/',
             },
+            {
+              text: 'Fonts and Text Styling',
+              link: '/css/fonts-and-text-styling/',
+            },
           ],
         },
       ],
