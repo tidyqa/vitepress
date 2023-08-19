@@ -2,6 +2,7 @@
 layout: doc
 title: CSS Tutorial
 description: Learn how to style your web pages with Cascading Style Sheets (CSS) through easy-to-follow tutorials.
+editLink: true
 head:
   - ['meta', {property: 'og:title', content:  'CSS Tutorial' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/css/' }] 
