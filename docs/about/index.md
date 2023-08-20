@@ -3,6 +3,9 @@ layout: doc
 title: About
 description: Web and Mobile Applications Testing and Developing.
 editLink: false
+sidebar: false
+outline: false
+lastUpdated: false
 head:
   - ['meta', {property: 'og:title', content:  'About' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/about/' }] 
