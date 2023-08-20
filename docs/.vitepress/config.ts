@@ -258,6 +258,10 @@ export default defineConfig({
               text: 'Loops',
               link: '/javascript/loops/',
             },
+            {
+              text: 'Functions',
+              link: '/javascript/functions/',
+            },
           ],
         },
       ],
