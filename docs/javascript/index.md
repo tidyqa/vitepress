@@ -15,7 +15,7 @@ head:
 
 JavaScript is a scripting language that enables you to create dynamic and interactive web content. It's commonly used to manipulate HTML and CSS, handle user interactions, and perform various tasks on the client-side (browser). JavaScript is supported by all modern web browsers.
 
-## Setting Up Your Development Environment
+## Development Environment
 
 You can include JavaScript code directly in your HTML file using `<script>` tags. These tags can be placed in the `<head>` or `<body>` of your HTML document.
 

@@ -9,7 +9,7 @@ head:
   - ['link', {rel: 'canonical', href: 'https://tidyqa.com/javascript/development-environment/'}]
 ---
 
-# Setting Up Your Development Environment
+# Development Environment
 
 Before you start writing JavaScript code, you need to set up your development environment. This environment includes tools that help you write, test, and debug your code efficiently. In this section, we'll guide you through the process of setting up a basic development environment for JavaScript programming.
 
