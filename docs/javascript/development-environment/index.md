@@ -4,9 +4,9 @@ title: Setting Up JavaScript Development Environment
 description: JavaScript is a scripting language that enables dynamic interactions on websites. It's often used to create features like form validation, animations, and updating content.
 head:
   - ['meta', {property: 'og:title', content:  'Setting Up JavaScript Development Environment' }]
-  - ['meta', {property: 'og:url', content:  'https://tidyqa.com/javascript/developement-environment/' }] 
+  - ['meta', {property: 'og:url', content:  'https://tidyqa.com/javascript/development-environment/' }] 
   - ['meta', {name: 'twitter:title', content: 'Setting Up JavaScript Development Environment'}]
-  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/javascript/developement-environment/'}]
+  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/javascript/development-environment/'}]
 ---
 
 # Setting Up Your Development Environment
