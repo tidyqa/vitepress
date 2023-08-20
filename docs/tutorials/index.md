@@ -22,4 +22,7 @@ features:
   - title: CSS Tutorial
     details: Learn how to style your web pages with Cascading Style Sheets through easy-to-follow tutorials.
     link: /css/
+  - title: JavaScript Tutorial
+    details: Basic introduction to JavaScript. Numbers, strings, booleans, arrays, objects, and more.
+    link: /javascript/
 ---

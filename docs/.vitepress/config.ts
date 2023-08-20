@@ -224,23 +224,19 @@ export default defineConfig({
         },
       ],
 
-      // '/url-modal-widget/': [
-      //   {
-      //     text: 'URL Modal Widget',
-      //     link: '/url-modal-widget/',
-      //     //collapsed: false,
-      //     items: [
-      //       {
-      //         text: 'Installation',
-      //         link: '/url-modal-widget/installation/',
-      //       },
-      //       {
-      //         text: 'Demo',
-      //         link: '/url-modal-widget/demo/',
-      //       },
-      //     ],
-      //   },
-      // ],
+      '/javascript/': [
+        {
+          text: 'JavaScript Tutorial',
+          link: '/javascript/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Introduction to JavaScript',
+              link: '/javascript/introduction/',
+            },
+          ],
+        },
+      ],
     },
   },
 
