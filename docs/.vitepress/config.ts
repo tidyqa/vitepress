@@ -12,11 +12,6 @@ export default defineConfig({
     hostname: 'https://tidyqa.com',
   },
 
-  editLink: {
-    pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path',
-    text: 'Edit this page on GitHub'
-  },
-
   head: [
     [
       'link',
@@ -32,6 +27,11 @@ export default defineConfig({
       provider: 'local',
     },
     logo: { src: '/files/tidyqa-logo-mini.svg', width: 24, height: 24 },
+
+    editLink: {
+      pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
 
     footer: {
       message:
