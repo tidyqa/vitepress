@@ -250,6 +250,14 @@ export default defineConfig({
               text: 'Operators',
               link: '/javascript/operators/',
             },
+            {
+              text: 'Conditional Statements',
+              link: '/javascript/conditional-statements/',
+            },
+            {
+              text: 'Loops',
+              link: '/javascript/loops/',
+            },
           ],
         },
       ],
