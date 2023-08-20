@@ -20,13 +20,9 @@ JavaScript, often abbreviated as JS, is a high-level, interpreted scripting lang
 ## Key Features of JavaScript
 
 - **Versatility:** JavaScript can be used for a wide range of tasks, from simple form validation to complex web applications.
-
 - **Interactivity:** It enables you to create elements that respond to user actions, such as clicking buttons or submitting forms.
-
 - **DOM Manipulation:** JavaScript can modify the Document Object Model (DOM) of a web page, allowing you to dynamically update content and styles.
-
 - **Asynchronous Programming:** Through features like callbacks and promises, JavaScript can handle tasks without blocking the main execution thread, improving performance.
-
 - **Cross-Browser Compatibility:** JavaScript works across different web browsers, ensuring a consistent experience for users.
 
 ## JavaScript in Web Development
@@ -34,9 +30,7 @@ JavaScript, often abbreviated as JS, is a high-level, interpreted scripting lang
 JavaScript is an integral part of modern web development. It's used in conjunction with HTML and CSS to build interactive and dynamic web pages. Here's how JavaScript fits into the web development ecosystem:
 
 1. **HTML (HyperText Markup Language):** HTML is the structure of a web page, defining its content and layout.
-
 2. **CSS (Cascading Style Sheets):** CSS is responsible for the visual presentation and styling of the web page.
-
 3. **JavaScript:** JavaScript adds behavior to the web page. It allows you to create animations, validate user inputs, update content without refreshing the page, and more.
 
 ### Example

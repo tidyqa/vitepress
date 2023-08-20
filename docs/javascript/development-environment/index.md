@@ -18,9 +18,7 @@ Before you start writing JavaScript code, you need to set up your development en
 A code editor is a software application that allows you to write and edit your code. There are several code editors available, and choosing the right one is important for a comfortable and productive coding experience. Here are a few popular options:
 
 - **Visual Studio Code (VS Code):** A highly customizable and feature-rich code editor developed by Microsoft. It offers a wide range of extensions to enhance your workflow.
-
 - **Sublime Text:** A lightweight and fast code editor known for its speed and simplicity.
-
 - **Atom:** An open-source code editor developed by GitHub. Atom is highly customizable and comes with a built-in package manager.
 
 ## Installing Visual Studio Code (VS Code)
@@ -35,11 +33,8 @@ A code editor is a software application that allows you to write and edit your c
 Modern web browsers come with built-in developer tools that allow you to inspect, debug, and profile your JavaScript code. These tools are essential for testing and optimizing your code. Here's how to access the developer tools in popular browsers:
 
 - **Google Chrome:** Right-click on a web page element and select "Inspect" or press `Ctrl + Shift + I` (or `Cmd + Option + I` on macOS).
-
 - **Mozilla Firefox:** Right-click on a web page element and select "Inspect Element" or press `Ctrl + Shift + I` (or `Cmd + Option + I` on macOS).
-
 - **Microsoft Edge:** Right-click on a web page element and select "Inspect" or press `Ctrl + Shift + I` (or `Cmd + Option + I` on macOS).
-
 - **Safari:** Enable the "Develop" menu from Safari's preferences. Then, you can access the developer tools from the "Develop" menu.
 
 ## Using the Browser Console
@@ -47,13 +42,9 @@ Modern web browsers come with built-in developer tools that allow you to inspect
 The browser console is a powerful tool for testing JavaScript code and viewing output. To open the console:
 
 - In **Google** Chrome, right-click on the page, select "Inspect," and go to the "Console" tab.
-
 - In **Mozilla Firefox**, press `Ctrl + Shift + K` (or `Cmd + Option + K` on macOS) to open the Web Console.
-
 - In **Microsoft Edge**, right-click on the page, select "Inspect," and go to the "Console" tab.
-
 - In **Safari**, enable the "Develop" menu, and then select "Show Error Console."
-
 You can use the console to execute JavaScript commands and see their results in real-time.
 
 ## Summary

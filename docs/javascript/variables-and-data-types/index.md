@@ -18,9 +18,7 @@ In JavaScript, variables play a crucial role in storing and managing data. Under
 Variables in JavaScript are declared using the `var`, `let`, or `const` keyword, followed by the variable name. The choice between these keywords affects the scope and mutability of the variable:
 
 - `var`: Function-scoped variable with no block scope.
-
 - `let`: Block-scoped variable that can be reassigned.
-
 - `const`: Block-scoped variable that cannot be reassigned.
 
 ```javascript
@@ -35,17 +33,11 @@ const pi = 3.14;
 JavaScript has several built-in data types that define the nature of the values a variable can hold:
 
 - **Numbers:** Used for numeric values, including integers and floating-point numbers.
-
 - **Strings:** Used for text values. Enclosed in single (' ') or double (" ") quotes.
-
 - **Booleans:** Represents true or false values.
-
 - **Undefined:** Indicates a variable that has been declared but has no assigned value.
-
 - **Null:** Represents the intentional absence of any value.
-
 - **Arrays:** Used to store ordered collections of values.
-
 - **Objects:** Used to store key-value pairs and more complex data structures.
 
 ```javascript

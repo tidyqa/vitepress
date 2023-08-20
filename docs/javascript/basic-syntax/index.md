@@ -27,11 +27,8 @@ var score = 90;
 ### When naming variables, follow these guidelines:
 
 - Start with a letter, underscore (`_`), or dollar sign (`$`).
-
 - Use letters, numbers, underscores, or dollar signs.
-
 - Avoid using reserved words (e.g., `if`, `else`, `while`, etc.).
-
 - Choose descriptive names that convey the purpose of the variable.
 
 ## Data Types
@@ -39,13 +36,9 @@ var score = 90;
 JavaScript has several built-in data types that define the kind of value a variable can hold. Some common data types include:
 
 - **Numbers:** Used for numeric values.
-
 - **Strings:** Used for text values. Enclose strings in single (' ') or double (" ") quotes.
-
 - **Booleans:** Used for true or false values.
-
 - **Arrays:** Used to store collections of values.
-
 - **Objects:** Used to group related data and functions.
 
 ```javascript
@@ -65,13 +58,9 @@ let person = {            // Object
 JavaScript provides various operators for performing operations on values:
 
 - **Arithmetic Operators:** `+`, `-`, `*`, `/`, `%`
-
 - **Comparison Operators:** `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
-
 - **Logical Operators:** `&&` (and), `||` (or), `!` (not)
-
 - **Assignment Operators:** `=`, `+=`, `-=`, `*=`, `/=`, `%=`
-
 - **Increment/Decrement Operators:** `++`, `--`
 
 ```javascript
