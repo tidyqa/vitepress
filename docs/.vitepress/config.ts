@@ -270,6 +270,18 @@ export default defineConfig({
               text: 'DOM Manipulation',
               link: '/javascript/dom-manipulation/',
             },
+            {
+              text: 'Handling User Input',
+              link: '/javascript/handling-user-input/',
+            },
+            {
+              text: 'Asynchronous Programming',
+              link: '/javascript/asynchronous-programming/',
+            },
+            {
+              text: 'Fetch API',
+              link: '/javascript/fetch-api/',
+            },
           ],
         },
       ],

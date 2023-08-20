@@ -135,6 +135,39 @@ var userInput = prompt("Enter your name:");
 console.log("Hello, " + userInput + "!");
 ```
 
+## Asynchronous Programming
+
+JavaScript provides various techniques, such as callbacks.
+
+```js
+function fetchData(url, callback) {
+    // Simulate fetching data
+    setTimeout(function() {
+        let data = "Data from " + url;
+        callback(data);
+    }, 1000);
+}
+
+fetchData("example.com", function(data) {
+    console.log(data);
+});
+```
+
+## Fetch API
+
+You can use the `fetch` API to make network requests to retrieve data from external sources. The `fetch` function returns a promise that resolves to the response of the request.
+
+```js
+fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+```
+
 Remember that this is just a brief introduction to JavaScript. As you progress, you can explore more advanced topics like objects, classes, asynchronous programming (callbacks, promises, async/await), and working with APIs.
 
 To practice and experiment with JavaScript, you can use online code editors like CodePen, JSFiddle, or even the developer console in your browser. Additionally, there are many tutorials, courses, and resources available online to help you deepen your understanding of JavaScript.
