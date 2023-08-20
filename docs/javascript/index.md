@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: JavaScript Tutorial
-description: JavaScript is a versatile and widely-used programming language primarily used for adding interactivity to websites. Here's a step-by-step guide to get you started:
+description: JavaScript is a versatile and widely-used programming language primarily used for adding interactivity to websites. Here's a step-by-step guide to get you started.
 head:
   - ['meta', {property: 'og:title', content:  'JavaScript Tutorial' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/javascript/' }] 
