@@ -262,6 +262,14 @@ export default defineConfig({
               text: 'Functions',
               link: '/javascript/functions/',
             },
+            {
+              text: 'Events and Event Handling',
+              link: '/javascript/events-and-event-handling/',
+            },
+            {
+              text: 'DOM Manipulation',
+              link: '/javascript/dom-manipulation/',
+            },
           ],
         },
       ],
