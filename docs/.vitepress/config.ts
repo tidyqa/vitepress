@@ -234,6 +234,10 @@ export default defineConfig({
               text: 'Introduction to JavaScript',
               link: '/javascript/introduction/',
             },
+            {
+              text: 'Development Environment',
+              link: '/javascript/development-environment/',
+            },
           ],
         },
       ],
