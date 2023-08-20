@@ -188,6 +188,38 @@ export default defineConfig({
               text: 'Box Model',
               link: '/css/box-model/',
             },
+            {
+              text: 'Margins and Padding',
+              link: '/css/margins-and-paddings/',
+            },
+            {
+              text: 'Backgrounds',
+              link: '/css/backgrounds/',
+            },
+            {
+              text: 'Borders',
+              link: '/css/borders/',
+            },
+            {
+              text: 'Display and Positioning',
+              link: '/css/display-and-positioning/',
+            },
+            {
+              text: 'Flexbox',
+              link: '/css/flexbox/',
+            },
+            {
+              text: 'CSS Grid',
+              link: '/css/grid/',
+            },
+            {
+              text: 'Responsive Design',
+              link: '/css/responsive-design/',
+            },
+            {
+              text: 'Media Queries',
+              link: '/css/media-queries/',
+            },
           ],
         },
       ],
