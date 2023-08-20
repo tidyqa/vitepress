@@ -238,6 +238,14 @@ export default defineConfig({
               text: 'Development Environment',
               link: '/javascript/development-environment/',
             },
+            {
+              text: 'Basic Syntax',
+              link: '/javascript/basic-syntax/',
+            },
+            {
+              text: 'Variables and Data Types',
+              link: '/javascript/variables-and-data-types/',
+            },
           ],
         },
       ],
