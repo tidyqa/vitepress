@@ -2,7 +2,7 @@
 layout: doc
 title: About
 description: Web and Mobile Applications Testing and Developing.
-
+editLink: false
 head:
   - ['meta', {property: 'og:title', content:  'About' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/about/' }] 
@@ -10,9 +10,11 @@ head:
   - ['link', {rel: 'canonical', href: 'https://tidyqa.com/about/'}]
 ---
 
-# About Me
+# About
 
 Hello, I'm Bruno, and I appreciate you taking the time to visit!
+
+## About Me
 
 **Here are a few lines to introduce myself:**
 
@@ -23,13 +25,17 @@ Hello, I'm Bruno, and I appreciate you taking the time to visit!
 ## Knowledge
 
 - HTML, CSS, and JavaScript
-- Exploratory Testing for Web and Mobile Applications
+- Exploratory Testing - Web and Mobile Application
 - Essential Website Optimization
 - Static Website Design
 
 ## About Website
 
-Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://stackblitz.com/), the code is hosted on GitHub, using the MIT license and currently running on [Netlify](https://www.netlify.com).
+Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://stackblitz.com/).
+
+Content generated for educational purposes with assistance from [ChatGPT](https://chat.openai.com/) and subsequently revised by human editors.
+
+The code is hosted on GitHub, using the MIT license and currently running on [Netlify](https://www.netlify.com).
 
 ## Contact
 
