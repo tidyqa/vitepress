@@ -246,6 +246,10 @@ export default defineConfig({
               text: 'Variables and Data Types',
               link: '/javascript/variables-and-data-types/',
             },
+            {
+              text: 'Operators',
+              link: '/javascript/operators/',
+            },
           ],
         },
       ],
