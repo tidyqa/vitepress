@@ -1,6 +1,5 @@
 ---
 layout: doc
-last Updated: true
 title: Math and Numbers - JavaScript Snippets
 description: Fundamental for handling mathematical calculations and operations.
 head:

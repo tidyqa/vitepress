@@ -19,6 +19,7 @@ features:
     link: /snippets/javascript/math-and-numbers/
   - title: String Manipulation
     details: Crucial for text processing and formatting.
+    link: /snippets/javascript/string-manipulation/
   - title: Array Operations
     details: Essential for working with collections of data.
   - title: Object Manipulation

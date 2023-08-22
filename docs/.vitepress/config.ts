@@ -285,6 +285,25 @@ export default defineConfig({
           ],
         },
       ],
+
+      '/snippets/javascript/': [
+        {
+          text: 'JavaScript Snippets',
+          //link: '/javascript/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Math and Numbers',
+              link: '/snippets/javascript/math-and-numbers/',
+            },
+            {
+              text: 'String Manipulation',
+              link: '/snippets/javascript/string-manipulation/',
+            },
+          ],
+        },
+      ],
+
     },
   },
 

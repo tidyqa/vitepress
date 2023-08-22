@@ -15,12 +15,14 @@ hero:
 features:
   - title: Math and Numbers
     details: Fundamental for handling mathematical calculations and operations.
-    link: /javascript-snippets/math-and-numbers/
+    link: /snippets/javascript/math-and-numbers/
   - title: String Manipulation
     details: Crucial for text processing and formatting.
+    link: /snippets/javascript/string-manipulation/
   - title: Array Operations
     details: Essential for working with collections of data.
-    link: /javascript-snippets/array-operations/
+    link: /snippets/javascript/array-operations/
   - title: Object Manipulation
     details: Important for handling structured data.
+    link: /snippets/javascript/object-manipulation/
 ---
