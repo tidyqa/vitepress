@@ -304,6 +304,10 @@ export default defineConfig({
               text: 'Array Operations',
               link: '/snippets/javascript/array-operations/',
             },
+            {
+              text: 'Object Manipulation',
+              link: '/snippets/javascript/object-manipulation/',
+            },
           ],
         },
       ],
