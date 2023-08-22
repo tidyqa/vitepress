@@ -1,7 +1,3 @@
----
-layout: home
-title: Code Snippets
-description: Commonly used HTML, CSS, and JavaScript code snippets.
 head:
   - ['meta', {property: 'og:title', content:  'Code Snippets' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/snippets/' }] 
@@ -13,16 +9,6 @@ hero:
   tagline: Collection of commonly used HTML, CSS, and JavaScript code snippets that you can use in your projects.
 
 features:
-  - title: Math and Numbers
-    details: Fundamental for handling mathematical calculations and operations.
-    link: /snippets/javascript/math-and-numbers/
-  - title: String Manipulation
-    details: Crucial for text processing and formatting.
-    link: /snippets/javascript/string-manipulation/
-  - title: Array Operations
-    details: Essential for working with collections of data.
-    link: /snippets/javascript/array-operations/
-  - title: Object Manipulation
-    details: Important for handling structured data.
-    link: /snippets/javascript/object-manipulation/
+  - title: JavaScript Snippets
+    link: /snippets/javascript/
 ---

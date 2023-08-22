@@ -42,6 +42,7 @@ export default defineConfig({
     nav: [
       //{ text: 'About', link: '/about/' },
       { text: 'Tutorials', link: '/tutorials/' },
+      { text: 'Snippets', link: '/snippets/' },
 
       // {
       //   text: 'Dropdown Menu',
@@ -307,6 +308,10 @@ export default defineConfig({
             {
               text: 'Object Manipulation',
               link: '/snippets/javascript/object-manipulation/',
+            },
+            {
+              text: 'Conversion and Calculation',
+              link: '/snippets/javascript/conversion-and-calculation/',
             },
           ],
         },

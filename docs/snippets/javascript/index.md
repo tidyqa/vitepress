@@ -21,6 +21,11 @@ features:
     link: /snippets/javascript/string-manipulation/
   - title: Array Operations
     details: Essential for working with collections of data.
+    link: /snippets/javascript/array-operations/
   - title: Object Manipulation
     details: Important for handling structured data.
+    link: /snippets/javascript/object-manipulation/
+  - title: Conversion and Calculation
+    details: Useful for unit conversions and basic calculations.
+    link: /snippets/javascript/object-manipulation/
 ---
