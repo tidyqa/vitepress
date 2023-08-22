@@ -1,3 +1,7 @@
+---
+layout: home
+title: Code Snippets
+description: Commonly used HTML, CSS, and JavaScript code snippets.
 head:
   - ['meta', {property: 'og:title', content:  'Code Snippets' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/snippets/' }] 
@@ -6,7 +10,7 @@ head:
 
 hero:
   name: Code Snippets
-  tagline: Collection of commonly used HTML, CSS, and JavaScript code snippets that you can use in your projects.
+  tagline: Commonly used HTML, CSS, and JavaScript code snippets.
 
 features:
   - title: JavaScript Snippets
