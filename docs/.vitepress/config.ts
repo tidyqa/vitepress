@@ -300,6 +300,10 @@ export default defineConfig({
               text: 'String Manipulation',
               link: '/snippets/javascript/string-manipulation/',
             },
+            {
+              text: 'Array Operations',
+              link: '/snippets/javascript/array-operations/',
+            },
           ],
         },
       ],
