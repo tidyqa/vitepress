@@ -5,9 +5,9 @@ title: Math and Numbers - JavaScript Snippets
 description: Fundamental for handling mathematical calculations and operations.
 head:
   - ['meta', {property: 'og:title', content:  'Math and Numbers - JavaScript Snippets' }]
-  - ['meta', {property: 'og:url', content:  'https://tidyqa.com/javascript-snippets/math-and-numbers/' }] 
+  - ['meta', {property: 'og:url', content:  'https://tidyqa.com/snippets/javascript/math-and-numbers/' }] 
   - ['meta', {name: 'twitter:title', content: 'Math and Numbers - JavaScript Snippets'}]
-  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/javascript-snippets/math-and-numbers/'}]
+  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/snippets/javascript/math-and-numbers/'}]
 ---
 
 # Math and Numbers
