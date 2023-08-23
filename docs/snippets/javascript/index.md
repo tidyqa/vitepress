@@ -27,5 +27,8 @@ features:
     link: /snippets/javascript/object-manipulation/
   - title: Conversion and Calculation
     details: Useful for unit conversions and basic calculations.
-    link: /snippets/javascript/object-manipulation/
+    link: /snippets/javascript/conversion-and-calculation/
+  - title: Conditional Statements
+    details: Vital for making decisions in your code.
+    link: /snippets/javascript/conditional-statements/
 ---

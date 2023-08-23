@@ -313,6 +313,10 @@ export default defineConfig({
               text: 'Conversion and Calculation',
               link: '/snippets/javascript/conversion-and-calculation/',
             },
+            {
+              text: 'Conditional Statements',
+              link: '/snippets/javascript/conditional-statements/',
+            },
           ],
         },
       ],
