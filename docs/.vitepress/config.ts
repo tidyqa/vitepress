@@ -321,6 +321,10 @@ export default defineConfig({
               text: 'Loops and Iteration',
               link: '/snippets/javascript/loops-and-iteration/',
             },
+            {
+              text: 'Functions',
+              link: '/snippets/javascript/functions/',
+            },
           ],
         },
       ],

@@ -34,4 +34,7 @@ features:
   - title: Loops and Iteration
     details: Essential for repeating tasks and iterating over data.
     link: /snippets/javascript/loops-and-iteration/
+  - title: Functions
+    details: Foundational for structuring your code and reusing logic.
+    link: /snippets/javascript/functions/
 ---
