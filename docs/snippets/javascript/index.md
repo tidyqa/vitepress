@@ -31,4 +31,7 @@ features:
   - title: Conditional Statements
     details: Vital for making decisions in your code.
     link: /snippets/javascript/conditional-statements/
+  - title: Loops and Iteration
+    details: Essential for repeating tasks and iterating over data.
+    link: /snippets/javascript/loops-and-iteration/
 ---

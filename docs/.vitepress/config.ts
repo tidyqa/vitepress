@@ -317,6 +317,10 @@ export default defineConfig({
               text: 'Conditional Statements',
               link: '/snippets/javascript/conditional-statements/',
             },
+            {
+              text: 'Loops and Iteration',
+              link: '/snippets/javascript/loops-and-iteration/',
+            },
           ],
         },
       ],
