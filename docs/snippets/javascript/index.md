@@ -37,4 +37,7 @@ features:
   - title: Functions
     details: Foundational for structuring your code and reusing logic.
     link: /snippets/javascript/functions/
+  - title: Promises and Async/Await
+    details: Critical for managing asynchronous operations.
+    link: /snippets/javascript/functions/
 ---
