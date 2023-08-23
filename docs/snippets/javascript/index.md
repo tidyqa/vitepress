@@ -40,4 +40,7 @@ features:
   - title: Promises and Async/Await
     details: Critical for managing asynchronous operations.
     link: /snippets/javascript/promises-async-await/
+  - title: Error Handling
+    details: Important for gracefully managing errors in your code.
+    link: /snippets/javascript/error-handling/
 ---

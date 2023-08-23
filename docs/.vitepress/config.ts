@@ -329,6 +329,10 @@ export default defineConfig({
               text: 'Promises and Async/Await',
               link: '/snippets/javascript/promises-async-await/',
             },
+            {
+              text: 'Error Handling',
+              link: '/snippets/javascript/error-handling/',
+            },
           ],
         },
       ],
