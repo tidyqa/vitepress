@@ -39,5 +39,5 @@ features:
     link: /snippets/javascript/functions/
   - title: Promises and Async/Await
     details: Critical for managing asynchronous operations.
-    link: /snippets/javascript/functions/
+    link: /snippets/javascript/promises-async-await/
 ---
