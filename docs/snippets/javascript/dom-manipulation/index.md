@@ -149,7 +149,7 @@ changeText();
 
     Log a message when a form is submitted.
 
-    ```javascript
+```javascript
     // HTML: <form id="myForm"></form>
     function handleFormSubmit() {
       const form = document.getElementById("myForm");
@@ -159,7 +159,7 @@ changeText();
       });
     }
     handleFormSubmit();
-    ```
+ ```
 
 ## Change Background Color
 
