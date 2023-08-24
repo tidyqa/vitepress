@@ -19,8 +19,11 @@ Sure, here are 20 functional JavaScript code snippets related to DOM Manipulatio
 
 Change the text content of an element with the ID `myElement`.
 
+```html
+<p id="myElement">Original Text</p>
+```
+
 ```javascript
-// HTML: <p id="myElement">Original Text</p>
 function changeText() {
   const element = document.getElementById("myElement");
   element.textContent = "New Text";
@@ -33,8 +36,11 @@ changeText();
 
 Toggle a CSS class on a button element.
 
+```html
+<button id="myButton">Toggle Class</button>
+```
+
 ```javascript
-// HTML: <button id="myButton">Toggle Class</button>
 function toggleClass() {
   const button = document.getElementById("myButton");
   button.classList.toggle("active");
@@ -47,8 +53,11 @@ toggleClass();
 
 Create a new paragraph element and append it to a div.
 
+```html
+<div id="container"></div>
+```
+
 ```javascript
-// HTML: <div id="container"></div>
 function createParagraph() {
   const container = document.getElementById("container");
   const paragraph = document.createElement("p");
@@ -63,8 +72,11 @@ createParagraph();
 
 Remove an element with the ID `elementToRemove`.
 
+```html
+<div id="elementToRemove">Content</div>
+```
+
 ```javascript
-// HTML: <div id="elementToRemove">Content</div>
 function removeElement() {
   const element = document.getElementById("elementToRemove");
   element.remove();
@@ -77,8 +89,11 @@ removeElement();
 
 Change the source attribute of an image element.
 
+```html
+<img id="myImage" src="old-image.jpg">
+```
+
 ```javascript
-// HTML: <img id="myImage" src="old-image.jpg">
 function changeImageSrc() {
   const image = document.getElementById("myImage");
   image.setAttribute("src", "new-image.jpg");
@@ -91,8 +106,11 @@ changeImageSrc();
 
 Add a click event listener to a button.
 
+```html
+<button id="myButton">Click Me</button>
+```
+
 ```javascript
-// HTML: <button id="myButton">Click Me</button>
 function addButtonListener() {
   const button = document.getElementById("myButton");
   button.addEventListener("click", function() {
@@ -106,8 +124,11 @@ addButtonListener();
 
 Get the value of an input element.
 
+```html
+<input id="myInput" type="text">
+```
+
 ```javascript
-// HTML: <input id="myInput" type="text">
 function getInputValue() {
   const input = document.getElementById("myInput");
   console.log("Input value:", input.value);
@@ -119,8 +140,11 @@ getInputValue();
 
 Scroll the page to the top when a button is clicked.
 
+```html
+<button id="scrollButton">Scroll to Top</button>
+```
+
 ```javascript
-// HTML: <button id="scrollButton">Scroll to Top</button>
 function scrollToTop() {
   const button = document.getElementById("scrollButton");
   button.addEventListener("click", function() {
@@ -135,8 +159,11 @@ scrollToTop();
 
 Hide an element with the class `hidden-element`.
 
+```html
+<div class="hidden-element">Content</div>
+```
+
 ```javascript
-// HTML: <div class="hidden-element">Content</div>
 function hideElement() {
   const element = document.querySelector(".hidden-element");
   element.style.display = "none";
@@ -149,8 +176,11 @@ hideElement();
 
 Log a message when a form is submitted.
 
+```html
+<form id="myForm"></form>
+```
+
 ```javascript
-// HTML: <form id="myForm"></form>
 function handleFormSubmit() {
   const form = document.getElementById("myForm");
   form.addEventListener("submit", function(event) {
@@ -165,8 +195,11 @@ handleFormSubmit();
 
 Change the background color of a div.
 
+```html
+<div id="colorDiv">Content</div>
+```
+
 ```javascript
-// HTML: <div id="colorDiv">Content</div>
   function changeBackgroundColor() {
     const div = document.getElementById("colorDiv");
     div.style.backgroundColor = "blue";
@@ -179,8 +212,11 @@ Change the background color of a div.
 
 Add a hover effect to a link.
 
+```html
+<a id="hoverLink" href="#">Hover me</a>
+```
+
 ```javascript
-// HTML: <a id="hoverLink" href="#">Hover me</a>
 function addHoverEffect() {
   const link = document.getElementById("hoverLink");
    link.addEventListener("mouseenter", function() {
@@ -199,8 +235,11 @@ addHoverEffect();
 
 Change the inner HTML of a div.
 
+```html
+<div id="htmlDiv"><p>Old content</p></div>
+```
+
 ```javascript
-// HTML: <div id="htmlDiv"><p>Old content</p></div>
 function changeInnerHTML() {
   const div = document.getElementById("htmlDiv");
   div.innerHTML = "<p>New content</p>";
@@ -213,8 +252,11 @@ changeInnerHTML();
 
  Disable a button after clicking.
 
+ ```html
+<button id="disableButton">Click me</button>
+```
+
 ```javascript
-// HTML: <button id="disableButton">Click me</button>
 function disableButton() {
   const button = document.getElementById("disableButton");
   button.addEventListener("click", function() {
@@ -229,8 +271,11 @@ disableButton();
 
 Count the number of elements with a specific class.
 
+```html
+<div class="countable">Item 1</div><div class="countable">Item 2</div>
+```
+
 ```javascript
-// HTML: <div class="countable">Item 1</div><div class="countable">Item 2</div>
 function countElements() {
   const countableElements = document.querySelectorAll(".countable");
   console.log("Number of elements:", countableElements.length);
@@ -242,8 +287,11 @@ countElements();
 
 Append a new list item to an unordered list.
 
+```html
+<ul id="myList"></ul>
+```
+
 ```javascript
-// HTML: <ul id="myList"></ul>
 function appendListItem() {
   const list = document.getElementById("myList");
   const newItem = document.createElement("li");
@@ -258,8 +306,11 @@ appendListItem();
 
 Prevent a link from navigating to its default URL.
 
+```html
+<a id="preventLink" href="https://www.example.com">Click me</a>
+```
+
 ```javascript
-// HTML: <a id="preventLink" href="https://www.example.com">Click me</a>
 function preventDefaultNavigation() {
   const link = document.getElementById("preventLink");
   link.addEventListener("click", function(event) {
@@ -274,8 +325,11 @@ preventDefaultNavigation();
 
 Change the font size of a paragraph when a button is clicked.
 
+```html
+<button id="fontSizeButton">Increase Font Size</button><p id="fontChange">Text</p>
+```
+
 ```javascript
-// HTML: <button id="fontSizeButton">Increase Font Size</button><p id="fontChange">Text</p>
 function changeFontSize() {
   const fontSizeButton = document.getElementById("fontSizeButton");
   const fontChange = document.getElementById("fontChange");
@@ -294,8 +348,11 @@ changeFontSize();
 
 Implement drag-and-drop functionality for an element.
 
+```html
+<div id="dragElement" draggable="true">Drag me</div>
+```
+
 ```javascript
-// HTML: <div id="dragElement" draggable="true">Drag me</div>
 function implementDragAndDrop() {
   const dragElement = document.getElementById("dragElement");
 
@@ -315,8 +372,11 @@ implementDragAndDrop();
 
 Change the target attribute of a link to open in a new tab.
 
+```html
+<a id="externalLink" href="https://www.example.com">Visit Example</a>
+```
+
 ```javascript
-// HTML: <a id="externalLink" href="https://www.example.com">Visit Example</a>
 function changeLinkTarget() {
   const externalLink = document.getElementById("externalLink");
   externalLink.setAttribute("target", "_blank");

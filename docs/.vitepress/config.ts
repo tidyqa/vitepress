@@ -341,6 +341,10 @@ export default defineConfig({
               text: 'Event Handling',
               link: '/snippets/javascript/event-handling/',
             },
+            {
+              text: 'AJAX and Fetch',
+              link: '/snippets/javascript/ajax-and-fetch/',
+            },
           ],
         },
       ],

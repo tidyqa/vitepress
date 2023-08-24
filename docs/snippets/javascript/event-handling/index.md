@@ -17,38 +17,34 @@ Events are user actions or browser-generated occurrences. Handling events lets y
 
 Attach a `click` event listener to a button element.
 
-```javascript
-<h2>Click Event Handling</h2>
-
+```html
 <button id="myButton">Click Me</button>
+```
 
-<script>
+```javascript
 function handleClick() {
   console.log("Button clicked!");
 }
 
 const button = document.getElementById("myButton");
 button.addEventListener("click", handleClick);
-</script>
 ```
 
 ## Mouseover Event
 
 Respond to a `mouseover` event on an element.
 
-```javascript
-<h2>Mouseover Event</h2>
-
+```html
 <div id="myDiv" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+```
 
-<script>
+```javascript
 function handleMouseover() {
   console.log("Mouse over div!");
 }
 
 const div = document.getElementById("myDiv");
 div.addEventListener("mouseover", handleMouseover);
-</script>
 ```
 
 ## Keyboard Event Handling
@@ -56,30 +52,25 @@ div.addEventListener("mouseover", handleMouseover);
 Listen for keyboard events and display the pressed key `keydown`.
 
 ```javascript
-<h2>Keyboard Event Handling</h2>
-
-<script>
 function handleKeydown(event) {
   console.log("Key pressed:", event.key);
 }
 
 document.addEventListener("keydown", handleKeydown);
-</script>
 ```
 
 ## Form Submission
 
 Capture form submission and prevent default `preventDefault` behavior.
 
-```javascript
-<h2>Form Submission</h2>
-
+```html
 <form id="myForm">
   <input type="text" placeholder="Enter your name">
   <button type="submit">Submit</button>
 </form>
+```
 
-<script>
+```javascript
 function handleSubmit(event) {
   event.preventDefault();
   console.log("Form submitted!");
@@ -87,61 +78,55 @@ function handleSubmit(event) {
 
 const form = document.getElementById("myForm");
 form.addEventListener("submit", handleSubmit);
-</script>
 ```
 
 ## Double Click Event
 
 Detect a double click `dblclick` event on an element.
 
-```javascript
-<h2>Double Click Event</h2>
-
+```html
 <div id="myDiv" style="width: 100px; height: 100px; background-color: lightgreen;"></div>
+```
 
-<script>
+```javascript
 function handleDoubleClick() {
   console.log("Double click on div!");
 }
 
 const div = document.getElementById("myDiv");
 div.addEventListener("dblclick", handleDoubleClick);
-</script>
 ```
 
 ## 6. Input Event
 
 Track `input` changes in a text field.
 
-```javascript
-<h2>Input Event</h2>
-
+```html
 <input type="text" id="myInput" placeholder="Type something...">
+```
 
-<script>
+```javascript
 function handleInput(event) {
   console.log("Input value:", event.target.value);
 }
 
 const input = document.getElementById("myInput");
 input.addEventListener("input", handleInput);
-</script>
 ```
 
 ## Event Propagation
 
 Demonstrate event propagation using nested elements.
 
-```javascript
-<h2>Event Propagation</h2>
-
+```html
 <div id="outer">
   <div id="inner">
     Click me!
   </div>
 </div>
+```
 
-<script>
+```javascript
 function handleInnerClick() {
   console.log("Inner div clicked!");
 }
@@ -155,19 +140,17 @@ const outerDiv = document.getElementById("outer");
 
 innerDiv.addEventListener("click", handleInnerClick);
 outerDiv.addEventListener("click", handleOuterClick);
-</script>
 ```
 
 ## Remove Event Listener
 
 Attach and remove an event listener.
 
-```javascript
-<h2>Remove Event Listener</h2>
-
+```html
 <button id="myButton">Click Me</button>
+```
 
-<script>
+```javascript
 function handleClick() {
   console.log("Button clicked!");
 }
@@ -180,23 +163,21 @@ button.addEventListener("click", function() {
   console.log("Listener removed.");
   button.removeEventListener("click", handleClick);
 });
-</script>
 ```
 
 ## Event Delegation
 
 Use event delegation to handle clicks on multiple elements.
 
-```javascript
-<h2>Event Delegation</h2>
-
+```html
 <ul id="myList">
   <li>Item 1</li>
   <li>Item 2</li>
   <li>Item 3</li>
 </ul>
+```
 
-<script>
+```javascript
 function handleItemClick(event) {
   if (event.target.tagName === "LI") {
     console.log("Clicked:", event.target.textContent);
@@ -205,16 +186,13 @@ function handleItemClick(event) {
 
 const list = document.getElementById("myList");
 list.addEventListener("click", handleItemClick);
-</script>
 ```
 
 ## Context Menu Event
 
 Display a custom context menu `contextmenu` on right-click.
 
-```javascript
-<h2>Context Menu Event</h2>
-
+```html
 <div id="myDiv" style="width: 100px; height: 100px; background-color: lightcoral;"></div>
 
 <ul id="contextMenu" style="display: none;">
@@ -222,8 +200,9 @@ Display a custom context menu `contextmenu` on right-click.
   <li>Copy</li>
   <li>Paste</li>
 </ul>
+```
 
-<script>
+```javascript
 const div = document.getElementById("myDiv");
 const contextMenu = document.getElementById("contextMenu");
 
@@ -237,20 +216,18 @@ div.addEventListener("contextmenu", function(event) {
 window.addEventListener("click", function() {
   contextMenu.style.display = "none";
 });
-</script>
 ```
 
 ## Drag and Drop
 
 Implement basic drag-and-drop functionality.
 
-```javascript
-<h2>Drag and Drop</h2>
-
+```html
 <div id="draggable" draggable="true">Drag me!</div>
 <div id="droppable">Drop here</div>
+```
 
-<script>
+```javascript
 const draggable = document.getElementById("draggable");
 const droppable = document.getElementById("droppable");
 
@@ -266,7 +243,6 @@ droppable.addEventListener("drop", function(event) {
   event.preventDefault();
   console.log("Dropped!");
 });
-</script>
 ```
 
 ## Window Resize Event
@@ -274,15 +250,11 @@ droppable.addEventListener("drop", function(event) {
 Respond to the window `resize` event.
 
 ```javascript
-<h2>Window Resize Event</h2>
-
-<script>
 function handleResize() {
   console.log("Window resized:", window.innerWidth, "x", window.innerHeight);
 }
 
 window.addEventListener("resize", handleResize);
-</script>
 ```
 
 ## Mouse Movement Tracking
@@ -290,27 +262,22 @@ window.addEventListener("resize", handleResize);
 Track mouse movement `mousemove` on the document.
 
 ```javascript
-<h2>Mouse Movement Tracking</h2>
-
-<script>
 function handleMouseMove(event) {
   console.log("Mouse position:", event.clientX, event.clientY);
 }
 
 document.addEventListener("mousemove", handleMouseMove);
-</script>
 ```
 
 ## Preventing Default Behavior
 
 Prevent the default behavior `preventDefault` of a link click.
 
-```javascript
-<h2>Preventing Default Behavior</h2>
-
+```html
 <a href="https://www.example.com" id="myLink">Click me</a>
+```
 
-<script>
+```javascript
 function handleClick(event) {
   event.preventDefault();
   console.log("Link clicked, but default behavior prevented.");
@@ -318,22 +285,18 @@ function handleClick(event) {
 
 const link = document.getElementById("myLink");
 link.addEventListener("click", handleClick);
-</script>
 ```
 
 ## Event Target
 
 Log the target of the clicked element.
 
-```javascript
-
-
-<h2>Event Target</h2>
-
+```html
 <button id="btn1">Button 1</button>
 <button id="btn2">Button 2</button>
+```
 
-<script>
+```javascript
 function handleClick(event) {
   console.log("Clicked on:", event.target.textContent);
 }
@@ -343,7 +306,6 @@ const btn2 = document.getElementById("btn2");
 
 btn1.addEventListener("click", handleClick);
 btn2.addEventListener("click", handleClick);
-</script>
 ```
 
 ## Scroll Event
@@ -351,27 +313,22 @@ btn2.addEventListener("click", handleClick);
 Detect the `scroll` event on the window.
 
 ```javascript
-<h2>Scroll Event</h2>
-
-<script>
 function handleScroll() {
   console.log("Page scrolled:", window.scrollY);
 }
 
 window.addEventListener("scroll", handleScroll);
-</script>
 ```
 
 ## Mouseenter and Mouseleave Events
 
 Use `mouseenter` and `mouseleave` events.
 
-```javascript
-<h2>Mouseenter and Mouseleave Events</h2>
-
+```html
 <div id="myDiv" style="width: 100px; height: 100px; background-color: lightsalmon;"></div>
+```
 
-<script>
+```javascript
 const div = document.getElementById("myDiv");
 
 div.addEventListener("mouseenter", function() {
@@ -381,19 +338,17 @@ div.addEventListener("mouseenter", function() {
 div.addEventListener("mouseleave", function() {
   console.log("Mouse left div!");
 });
-</script>
 ```
 
 ## Input Focus and Blur Events
 
 Track input `focus` and `blur` events.
 
-```javascript
-<h2>Input Focus and Blur Events</h2>
-
+```html
 <input type="text" id="myInput" placeholder="Enter something...">
+```
 
-<script>
+```javascript
 const input = document.getElementById("myInput");
 
 input.addEventListener("focus", function() {
@@ -403,20 +358,18 @@ input.addEventListener("focus", function() {
 input.addEventListener("blur", function() {
   console.log("Input blurred!");
 });
-</script>
 ```
 
 ## Changing Event Target
 
 Change the target of a `click` event.
 
-```javascript
-<h2>Changing Event Target</h2>
-
+```html
 <button id="btn1">Button 1</button>
 <button id="btn2">Button 2</button>
+```
 
-<script>
+```javascript
 function handleClick(event) {
   event.target.style.backgroundColor = "yellow";
 }
@@ -426,19 +379,17 @@ const btn2 = document.getElementById("btn2");
 
 btn1.addEventListener("click", handleClick);
 btn2.addEventListener("click", handleClick);
-</script>
 ```
 
 ## Custom Event
 
 Create and dispatch a custom event `dispatchEvent`.
 
-```javascript
-<h2>Custom Event</h2>
-
+```html
 <button id="myButton">Click Me</button>
+```
 
-<script>
+```javascript
 const button = document.getElementById("myButton");
 
 button.addEventListener("customClick", function() {
@@ -451,7 +402,6 @@ function triggerCustomClick() {
 }
 
 button.addEventListener("click", triggerCustomClick);
-</script>
 ```
 
 _Feel free to copy and paste these code snippets into an HTML file and see how they work in action. These examples cover a variety of event handling scenarios to help you understand different ways to work with events in JavaScript._

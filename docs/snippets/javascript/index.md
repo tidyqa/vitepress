@@ -49,4 +49,7 @@ features:
   - title: Event Handling
     details: Crucial for responding to user interactions.
     link: /snippets/javascript/event-handling/
+  - title: AJAX and Fetch
+    details: Vital for making HTTP requests and handling responses.
+    link: /snippets/javascript/ajax-and-fetch/
 ---
