@@ -43,4 +43,10 @@ features:
   - title: Error Handling
     details: Important for gracefully managing errors in your code.
     link: /snippets/javascript/error-handling/
+  - title: DOM Manipulation
+    details: Key for interacting with web page elements.
+    link: /snippets/javascript/dom-manipulation/
+  - title: Event Handling
+    details: Crucial for responding to user interactions.
+    link: /snippets/javascript/event-handling/
 ---

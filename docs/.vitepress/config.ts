@@ -333,6 +333,14 @@ export default defineConfig({
               text: 'Error Handling',
               link: '/snippets/javascript/error-handling/',
             },
+            {
+              text: 'DOM Manipulation',
+              link: '/snippets/javascript/dom-manipulation/',
+            },
+            {
+              text: 'Event Handling',
+              link: '/snippets/javascript/event-handling/',
+            },
           ],
         },
       ],

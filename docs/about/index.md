@@ -44,7 +44,7 @@ The code is hosted on GitHub, using the MIT license and currently running on [Ne
 
 Email: qatidy@gmail.com
 
-<VPTeamMembers size="small" :members="members" />
+<!-- <VPTeamMembers size="small" :members="members" />
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
@@ -61,4 +61,4 @@ const members = [
   },
 
 ]
-</script>
+</script> -->
