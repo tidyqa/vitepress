@@ -14,42 +14,45 @@ hero:
 
 features:
   - title: Math and Numbers
-    details: Fundamental for handling mathematical calculations and operations.
+    details: Mathematical calculations and operations.
     link: /snippets/javascript/math-and-numbers/
   - title: String Manipulation
-    details: Crucial for text processing and formatting.
+    details: Text processing and formatting.
     link: /snippets/javascript/string-manipulation/
   - title: Array Operations
-    details: Essential for working with collections of data.
+    details: Working with collections of data.
     link: /snippets/javascript/array-operations/
   - title: Object Manipulation
-    details: Important for handling structured data.
+    details: Handling structured data.
     link: /snippets/javascript/object-manipulation/
   - title: Conversion and Calculation
-    details: Useful for unit conversions and basic calculations.
+    details: Unit conversions and basic calculations.
     link: /snippets/javascript/conversion-and-calculation/
   - title: Conditional Statements
-    details: Vital for making decisions in your code.
+    details: Making decisions in your code.
     link: /snippets/javascript/conditional-statements/
   - title: Loops and Iteration
-    details: Essential for repeating tasks and iterating over data.
+    details: Repeating tasks and iterating over data.
     link: /snippets/javascript/loops-and-iteration/
   - title: Functions
-    details: Foundational for structuring your code and reusing logic.
+    details: Structuring your code and reusing logic.
     link: /snippets/javascript/functions/
   - title: Promises and Async/Await
-    details: Critical for managing asynchronous operations.
+    details: Managing asynchronous operations.
     link: /snippets/javascript/promises-async-await/
   - title: Error Handling
-    details: Important for gracefully managing errors in your code.
+    details: Gracefully managing errors in your code.
     link: /snippets/javascript/error-handling/
   - title: DOM Manipulation
-    details: Key for interacting with web page elements.
+    details: Interacting with web page elements.
     link: /snippets/javascript/dom-manipulation/
   - title: Event Handling
-    details: Crucial for responding to user interactions.
+    details: Responding to user interactions.
     link: /snippets/javascript/event-handling/
   - title: AJAX and Fetch
-    details: Vital for making HTTP requests and handling responses.
+    details: Making HTTP requests and handling responses.
     link: /snippets/javascript/ajax-and-fetch/
+  - title: LocalStorage and SessionStorage
+    details: Client-side data storage.
+    link: /snippets/javascript/localstorage-and-sessionstorage/
 ---

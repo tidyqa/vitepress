@@ -345,6 +345,10 @@ export default defineConfig({
               text: 'AJAX and Fetch',
               link: '/snippets/javascript/ajax-and-fetch/',
             },
+            {
+              text: 'LocalStorage and SessionStorage',
+              link: '/snippets/javascript/localstorage-and-sessionstorage/',
+            },
           ],
         },
       ],
