@@ -69,6 +69,8 @@ features:
     link: /snippets/javascript/recursion/
   - title: Map and Set
     details: Managing unique values and key-value pairs.
+    link: /snippets/javascript/map-and-set/
   - title: JSON Manipulation
     details: Working with data interchange formats.
+    link: /snippets/javascript/json-manipulation/
 ---

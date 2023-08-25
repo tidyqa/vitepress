@@ -365,6 +365,14 @@ export default defineConfig({
               text: 'Recursion',
               link: '/snippets/javascript/recursion/',
             },
+            {
+              text: 'Map and Set',
+              link: '/snippets/javascript/map-and-set/',
+            },
+            {
+              text: 'JSON Manipulation',
+              link: '/snippets/javascript/json-manipulation/',
+            },
           ],
         },
       ],
