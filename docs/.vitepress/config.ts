@@ -357,6 +357,14 @@ export default defineConfig({
               text: 'Functional Programming',
               link: '/snippets/javascript/functional-programming/',
             },
+            {
+              text: 'Sorting and Searching',
+              link: '/snippets/javascript/sorting-and-searching/',
+            },
+            {
+              text: 'Recursion',
+              link: '/snippets/javascript/recursion/',
+            },
           ],
         },
       ],

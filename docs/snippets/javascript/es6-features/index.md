@@ -165,7 +165,7 @@ const getData = async () => {
 };
 ```
 
-## Map:
+## Map
 
 The Map object allows storing key-value pairs.
 

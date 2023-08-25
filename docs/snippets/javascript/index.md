@@ -63,8 +63,10 @@ features:
     link: /snippets/javascript/functional-programming/
   - title: Sorting and Searching
     details: Organizing and retrieving data efficiently.
+    link: /snippets/javascript/sorting-and-searching/
   - title: Recursion
     details: Solving problems that involve repeated subtasks.
+    link: /snippets/javascript/recursion/
   - title: Map and Set
     details: Managing unique values and key-value pairs.
   - title: JSON Manipulation
