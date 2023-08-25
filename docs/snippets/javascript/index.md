@@ -55,4 +55,18 @@ features:
   - title: LocalStorage and SessionStorage
     details: Client-side data storage.
     link: /snippets/javascript/localstorage-and-sessionstorage/
+  - title: ES6 Features
+    details: Utilizing modern JavaScript language features.
+    link: /snippets/javascript/es6-features/
+  - title: Functional Programming
+    details: Writing clean and maintainable code.
+    link: /snippets/javascript/functional-programming/
+  - title: Sorting and Searching
+    details: Organizing and retrieving data efficiently.
+  - title: Recursion
+    details: Solving problems that involve repeated subtasks.
+  - title: Map and Set
+    details: Managing unique values and key-value pairs.
+  - title: JSON Manipulation
+    details: Working with data interchange formats.
 ---

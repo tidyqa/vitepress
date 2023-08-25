@@ -349,6 +349,14 @@ export default defineConfig({
               text: 'LocalStorage and SessionStorage',
               link: '/snippets/javascript/localstorage-and-sessionstorage/',
             },
+            {
+              text: 'ES6 Features',
+              link: '/snippets/javascript/es6-features/',
+            },
+            {
+              text: 'Functional Programming',
+              link: '/snippets/javascript/functional-programming/',
+            },
           ],
         },
       ],
