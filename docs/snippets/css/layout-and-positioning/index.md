@@ -15,265 +15,774 @@ In this collection of CSS code snippets, you'll find a range of solutions to com
 
 ## Centering an Element Horizontally and Vertically
 
-This snippet is useful for perfectly centering an element both horizontally and vertically within its parent container. The `position: absolute` along with `top`, `left`, and `transform` properties ensure accurate centering.
+This snippet shows how to center an element both horizontally and vertically within its parent container using CSS. It utilizes absolute positioning and the `transform` property.
 
-```css
-.centered-element {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <p>This is centered.</p>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Sticky Header
+## Sticky Header
 
-This snippet is used to create a sticky header that remains at the top of the viewport as the user scrolls. It's particularly useful for navigation bars, ensuring easy access to navigation links at all times.
+Learn how to create a sticky header that remains fixed at the top of the viewport as the user scrolls. This effect is achieved using the `position: sticky;` property in CSS.
 
-```css
-.sticky-header {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  z-index: 100;
-}
-```
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
 
-## Creating a Fixed Footer
+<div class="header">
+  <h1>Sticky Header</h1>
+</div>
 
-This code creates a footer that stays fixed at the bottom of the viewport, regardless of scrolling. It's ideal for ensuring important information or navigation options are consistently accessible.
+<p>Scroll down...</p>
 
-```css
-.fixed-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-}
-```
-
-## Creating a Two-Column Layout
-
-This snippet demonstrates how to create a basic two-column layout, commonly used for sidebars and content sections. It allows content to be displayed side by side.
-
-```css
-.two-column-layout {
-  display: flex;
-}
-.column {
-  flex: 1;
-  padding: 20px;
-}
-```
-
-## Creating a Three-Column Layout
-
-Similar to the two-column layout, this snippet extends to a three-column layout, providing more flexibility in arranging content in a grid-like structure.
-
-```css
-.three-column-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+</body>
+</html>
 ```
 
 ## Equal Height Columns with Flexbox
 
-This code snippet uses flexbox to ensure that columns within a row have equal heights, regardless of the content. It's useful for maintaining a consistent layout.
+Discover how to create equal height columns using the flexbox layout model. This snippet uses the `display: flex;` property on the container and assigns a `flex` value to each column, resulting in columns of equal height.
 
-```css
-.equal-height-columns {
-  display: flex;
-}
-.column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: flex;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some content...</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some content...</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some content...</p>
+  </div>
+</div>
+
+</body>
+</html>
 ```
 
-## Responsive Centering with Flexbox
+## Two-Column Layout
 
-This snippet showcases how to center content both horizontally and vertically within a container using flexbox, while ensuring the layout remains responsive.
+Learn how to create a simple two-column layout using the CSS grid layout. This snippet sets up a grid container with two equally sized columns.
 
-```css
-.centered-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <h2>Column 1</h2>
+    <p>Some content...</p>
+  </div>
+  <div>
+    <h2>Column 2</h2>
+    <p>Some content...</p>
+  </div>
+</div>
+
+</body>
+</html>
 ```
 
-## Positioning a Sidebar
+## Floating Elements for Text Wrapping
 
-This code demonstrates positioning a sidebar using the `float` property. It's commonly used in responsive designs to create a compact navigation or additional content area.
+This snippet demonstrates how to use the `float` property to make text wrap around floated images. It's commonly used for creating magazine-style layouts.
 
-```css
-.sidebar {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .float-left {
+    float: left;
+    margin-right: 20px;
+  }
+  .float-right {
+    float: right;
+    margin-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<img src="image.jpg" alt="Floating Image" class="float-left">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod...</p>
+
+<img src="image.jpg" alt="Floating Image" class="float-right">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod...</p>
+
+</body>
+</html>
 ```
 
-## Creating a Full-Page Hero Image
+## Horizontal Navigation Menu
 
-This snippet creates a hero image that covers the entire viewport. It's often used on landing pages to grab attention and set the tone.
+Discover how to create a horizontal navigation menu using an unordered list and CSS. This snippet uses the `float` property to position the menu items side by side.
 
-```css
-.hero-image {
-  background-image: url('image.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<ul class="nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>
 ```
 
-## Creating a Fixed-Width Layout
+## Vertical Navigation Menu
 
-This code snippet establishes a fixed-width layout for content, which can be useful when you want to maintain a consistent width across different screen sizes.
+Learn how to create a vertical navigation menu using an unordered list and CSS. This snippet styles the menu items to stack vertically.
 
-```css
-.fixed-width-container {
-  width: 960px;
-  margin: 0 auto;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .nav {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  .nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .nav li a:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<ul class="nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>
 ```
 
-## Creating a Fluid Width Layout
+## Full-Height Sidebar
 
-This snippet showcases a fluid-width layout that adapts to the available screen space. It's great for creating responsive designs that adjust to various screen sizes.
+Explore how to create a full-height sidebar that remains fixed while the content scrolls. This snippet uses the `position: fixed;` property to achieve the effect.
 
-```css
-.fluid-width-container {
-  max-width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    color: #fff;
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>Sidebar</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <h2>Main Content</h2>
+  <p>Lorem ipsum dolor sit amet...</p>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Centered Max-Width Container
+## Footer at the Bottom of the Page
 
-This code snippet helps you create a centered container with a maximum width, ensuring that content doesn't become too wide on larger screens.
+Learn how to create a footer that sticks to the bottom of the page, even if the content is short. This snippet uses flexbox to ensure the footer stays at the bottom.
 
-```css
-.centered-max-width {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>Main Content</h1>
+  <p>Lorem ipsum dolor sit amet...</p>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 My Website. All rights reserved.</p>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Masonry Grid Layout
+## Split Screen Layout
 
-This snippet demonstrates how to achieve a masonry-style grid layout using CSS Grid or column-count property, ideal for showcasing images with varying heights.
+Discover how to create a split screen layout with two panes using CSS. This snippet sets up a flex container and evenly divides it into left and right panes.
 
-```css
-.masonry-grid {
-  column-count: 3;
-  column-gap: 20px;
-}
-.grid-item {
-  break-inside: avoid;
-  margin-bottom: 20px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .split-container {
+    display: flex;
+    height: 100vh;
+  }
+  .left-pane, .right-pane {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .left-pane {
+    background-color: #f1f1f1;
+  }
+  .right-pane {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="split-container">
+  <div class="left-pane">
+    <h2>Left Pane</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </div>
+  <div class="right-pane">
+    <h2>Right Pane</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </div>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Horizontal Navigation Bar
+## Full-Page Background Image
 
-This code creates a horizontal navigation bar with evenly spaced navigation links, which is a common pattern for website navigation menus.
+Learn how to set a full-page background image for your website using CSS. This snippet covers the background properties to ensure the image covers the entire viewport.
 
-```css
-.horizontal-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.nav-link {
-  text-decoration: none;
-  color: #333;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>Main Content</h1>
+  <p>Lorem ipsum dolor sit amet...</p>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Vertical Navigation Bar
+## Fixed Footer
 
-Similar to the horizontal navigation bar, this snippet sets up a vertical navigation bar, which can be used for side menus or navigational sidebars.
+Discover how to create a footer that stays fixed at the bottom of the viewport, regardless of the content length. This snippet uses absolute positioning to achieve the fixed footer effect.
 
-```css
-.vertical-nav {
-  display: flex;
-  flex-direction: column;
-}
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  margin-bottom: 10px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>Main Content</h1>
+  <p>Lorem ipsum dolor sit amet...</p>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 My Website. All rights reserved.</p>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Centered Content Block
+## Carousel with CSS Scroll Snap
 
-This code snippet showcases how to center a content block both horizontally and vertically within its parent container using flexbox or grid.
+Learn how to create a simple image carousel using CSS Scroll Snap. This snippet demonstrates how to make images scroll smoothly within a container.
 
-```css
-.centered-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="slide"><img src="image1.jpg" alt="Slide 1"></div>
+  <div class="slide"><img src="image2.jpg" alt="Slide 2"></div>
+  <div class="slide"><img src="image3.jpg" alt="Slide 3"></div>
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Split Layout
+## Responsive Image Grid
 
-This snippet helps create a split layout with two content sections, allowing you to display different types of content side by side.
+Discover how to create a responsive image grid using CSS Grid. This snippet sets up a grid layout that adapts to different screen sizes.
 
-```css
-.split-layout {
-  display: flex;
-}
-.split-content {
-  flex: 1;
-  padding: 20px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-grid">
+  <img class="image" src="image1.jpg" alt="Image 1">
+  <img class="image" src="image2.jpg" alt="Image 2">
+  <img class="image" src="image3.jpg" alt="Image 3">
+</div>
+
+</body>
+</html>
 ```
 
-## Positioning with Negative Margin
+## Circular Image
 
-This code snippet demonstrates how negative margins can be used to adjust the position of elements, enabling creative layout adjustments.
+Learn how to create a circular image using CSS. This snippet uses the `border-radius` property to achieve the circular shape.
 
-```css
-.negative-margin {
-  margin: -10px;
-}
-.negative-margin-item {
-  margin: 10px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .circular-image img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="circular-image">
+  <img src="profile.jpg" alt="Profile Image">
+</div>
+
+</body>
+</html>
 ```
 
-## Creating a Stacked Card Layout
+## Multi-Level Dropdown Menu
 
-This snippet creates a stacked card layout, often seen in mobile interfaces, where content is presented in a card-like format.
+Discover how to create a multi-level dropdown menu using HTML and CSS. This snippet sets up nested lists to create a dropdown with submenus.
 
-```css
-.card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .nav {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+  }
+  .nav li {
+    position: relative;
+    display: inline-block;
+  }
+  .nav li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+  }
+  .nav li:hover .submenu {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<ul class="nav">
+  <li><a href="#">Home</a></li>
+  <li>
+    <a href="#">Services</a>
+    <ul class="submenu">
+      <li><a href="#">Service 1</a></li>
+      <li><a href="#">Service 2</a></li>
+      <li><a href="#">Service 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>
 ```
 
-## Creating a Collapsible Sidebar Menu
+## Responsive Video Embed
 
-This code snippet is useful for creating a collapsible sidebar menu often used in responsive designs to save space while providing navigation options.
+Learn how to create a responsive video embed using CSS. This snippet maintains the video's aspect ratio and adjusts its size based on the screen width.
 
-```css
-.sidebar {
-  width: 250px;
-  transition: width 0.3s ease;
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div class="video-container">
+  <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+</div>
+
+</body>
+</html>
+```
+
+## Custom Checkbox and Radio Button
+
+Discover how to create custom-styled checkbox and radio button inputs using CSS. This snippet hides the default inputs and styles their labels.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .custom-checkbox, .custom-radio {
+    display: none;
+  }
+  .custom-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  .custom-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+  }
+  .custom-checkbox:checked + .custom-label:before {
+    background-color: #00b894;
+    border-color: #00b894;
+  }
+  .custom-radio:checked + .custom-label:before {
+    border-radius: 50%;
+    background-color: #00b894;
+    border-color
+
+: #00b894;
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="checkbox" class="custom-checkbox">
+<label for="checkbox" class="custom-label">Custom Checkbox</label>
+
+<input type="radio" id="radio1" name="radio" class="custom-radio">
+<label for="radio1" class="custom-label">Custom Radio 1</label>
+
+<input type="radio" id="radio2" name="radio" class="custom-radio">
+<label for="radio2" class="custom-label">Custom Radio 2</label>
+
+</body>
+</html>
+```
+
+## Progress Bar
+
+Learn how to create a progress bar using CSS. This snippet uses the `::before` pseudo-element to visually represent progress.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+  }
+  .progress-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 70%; /* Set the progress value */
+    background-color: #00b894;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar"></div>
+
+</body>
+</html>
+```
+
+I apologize for the oversight. Here is the missing snippet along with its description, provided in Markdown format:
+
+---
+
+## Sliding Sidebar Menu
+
+Learn how to create a sliding sidebar menu that appears from the side of the screen when a button is clicked. This snippet uses CSS transitions and transforms for the sliding effect.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
 }
-.collapsed {
-  width: 0;
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
 }
+</script>
+
+</body>
+</html>
 ```
