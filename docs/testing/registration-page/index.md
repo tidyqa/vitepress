@@ -1,5 +1,7 @@
 ---
-layout: home
+layout: doc
+sidebar: false
+outline: false
 title: Testing Registration Page
 description: Thoroughly testing the registration form's various scenarios helps guarantee a seamless user experience by identifying and rectifying potential issues.
 head:
