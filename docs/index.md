@@ -24,12 +24,12 @@ actions:
 
 features:
   - title: Testing Registration Page
-    details: Process of testing a registration form with fields.
+    details: Process of testing a registration form.
     link: /testing/registration-page/
   - title: Tutorials
-    details: Learn Web Development Basics. HTML, CSS, and JavaScript.
+    details: Learn Web Development Basics.
     link: /tutorials/
   - title: JavaScript Snippets
-    details: Collection of useful 400 JavaScript code snippets.
+    details: Collection of useful code snippets.
     link: /snippets/javascript/
 ---

@@ -41,17 +41,31 @@ export default defineConfig({
     },
     nav: [
       //{ text: 'About', link: '/about/' },
-      { text: 'Tutorials', link: '/tutorials/' },
-      { text: 'JavaScript Snippets', link: '/snippets/javascript/' },
+      //{ text: 'Tutorials', link: '/tutorials/' },
+      
+      {
+        text: 'Testing',
+        items: [
+          { text: 'Registration Page', link: '/testing/registration-page/' },
+        ],
+      },
+      
+      {
+        text: 'Tutorials',
+        items: [
+          { text: 'HTML Tutorial', link: '/html/' },
+          { text: 'CSS Tutorial', link: '/css/' },
+          { text: 'JavaScript Tutorial', link: '/javascript/' },
+        ],
+      },
 
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' },
-      //   ],
-      // },
+      {
+        text: 'Snippets',
+        items: [
+          { text: 'JavaScript Snippets', link: '/snippets/javascript/' },
+        ],
+      },
+
 
       // ...
     ],
