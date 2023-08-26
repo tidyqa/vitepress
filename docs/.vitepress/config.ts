@@ -62,6 +62,7 @@ export default defineConfig({
       {
         text: 'Snippets',
         items: [
+          { text: 'CSS Snippets', link: '/snippets/css/' },
           { text: 'JavaScript Snippets', link: '/snippets/javascript/' },
         ],
       },
@@ -73,6 +74,25 @@ export default defineConfig({
     sidebar: {
       // This sidebar gets displayed when a user
       // is on `guide` directory.
+
+
+      '/snippets/css/': [
+        {
+          text: 'CSS Snippets',
+          //link: '/testing/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Layout and Positioning',
+              link: '/snippets/css/layout-and-positioning/',
+            },
+            // {
+            //   text: 'Login Page',
+            //   link: '/testing/login-page/',
+            // },
+          ],
+        },
+      ],
 
       '/testing/': [
         {
