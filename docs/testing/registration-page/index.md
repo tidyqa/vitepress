@@ -1,7 +1,5 @@
 ---
 layout: doc
-sidebar: false
-outline: false
 title: Testing Registration Page
 description: Thoroughly testing the registration form's various scenarios helps guarantee a seamless user experience by identifying and rectifying potential issues.
 head:
@@ -10,8 +8,6 @@ head:
   - ['meta', {name: 'twitter:title', content: 'Testing Registration Page'}]
   - ['link', {rel: 'canonical', href: 'https://tidyqa.com/snippets/testing/registration-page/'}]
 ---
-
-[[toc]]
 
 # Testing Registration Page
 
