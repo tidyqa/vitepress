@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 sidebar: false
 outline: false
 title: Testing Registration Page
