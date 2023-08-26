@@ -35,7 +35,7 @@ export default defineConfig({
     externalLinkIcon:true,
     footer: {
       message:
-        'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+        '<a href="/about/">About</a><br>Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright:
         'Copyright © 2023-present <a href="https://tidyqa.com">TidyQA</a>',
     },
