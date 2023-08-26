@@ -14,6 +14,7 @@ hero:
 
 features:
   - title: Layout and Positioning
+    details: Range of solutions to common layout challenges.
     link: /snippets/css/layout-and-positioning/
   - title: Typography
   - title: Color and Backgrounds
