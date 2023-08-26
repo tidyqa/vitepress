@@ -14,11 +14,22 @@ hero:
   text: Bringing Ideas to Life
   tagline: Systematic approach to exploratory testing, combining creativity, intuition, and structured analysis.
   
-  actions:
-    - theme: brand
-      text: About
-      link: /about/
-    - theme: alt
-      text: Tutorials
-      link: /tutorials/
+actions:
+  - theme: brand
+    text: About
+    link: /about/
+  - theme: alt
+    text: Tutorials
+    link: /tutorials/
+
+features:
+  - title: Testing Registration Page
+    details: Process of testing a registration form with fields.
+    link: /testing/registration-page/
+  - title: Tutorials
+    details: Learn Web Development Basics. HTML, CSS, and JavaScript.
+    link: /tutorials/
+  - title: JavaScript Snippets
+    details: Collection of useful 400 JavaScript code snippets.
+    link: /snippets/javascript/
 ---

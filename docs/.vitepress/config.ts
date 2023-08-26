@@ -42,7 +42,7 @@ export default defineConfig({
     nav: [
       //{ text: 'About', link: '/about/' },
       { text: 'Tutorials', link: '/tutorials/' },
-      { text: 'Snippets', link: '/snippets/' },
+      { text: 'JavaScript Snippets', link: '/snippets/javascript/' },
 
       // {
       //   text: 'Dropdown Menu',
@@ -59,6 +59,28 @@ export default defineConfig({
     sidebar: {
       // This sidebar gets displayed when a user
       // is on `guide` directory.
+
+      '/testing/': [
+        {
+          text: 'Testing',
+          //link: '/testing/',
+          //collapsed: false,
+          items: [
+            {
+              text: 'Registration Page',
+              link: '/testing/registration-page/',
+            },
+            // {
+            //   text: 'Login Page',
+            //   link: '/testing/login-page/',
+            // },
+          ],
+        },
+      ],
+
+
+
+
       '/simple-bug-tracker/': [
         {
           text: 'Simple Bug Tracker',
