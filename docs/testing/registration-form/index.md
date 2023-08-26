@@ -13,120 +13,77 @@ head:
 
 In this example, we will cover the process of testing a registration form with fields for name, username, and email address. Proper testing ensures that the form functions correctly, handles user input accurately, and provides a smooth user experience.
 
-Certainly, here's the breakdown of the test cases without any list formatting:
+## Initial Submission
 
-**Initial Submission**
-- [x] Submit with correct details = Success message displayed, information saved.
-- [ ] Submit without entering anything = Form remains empty, no submission attempted.
-- [ ] Submit after navigating away = Form retains data when returning.
+1. **Submit with correct details** = Success message displayed, information saved.
+2. **Submit without entering anything** = Form remains empty, no submission attempted.
+3. **Submit after navigating away** = Form retains data when returning.
 
-**Name Validation**
-- [ ] Submit without name = Error: Name field is required.
-- [ ] Submit with spaces in name = Error: Name should not contain spaces.
-- [ ] Submit with special characters or numbers in name = Error: Name should only contain alphabetic characters.
-- [ ] Submit very long name = Error: Name should not exceed maximum character limit.
-- [ ] Submit very short name = Error: Name should contain minimum required characters.
-- [ ] Submit valid names in different scripts = Form handles diverse character sets correctly.
-- [ ] Submit name with emojis or symbols = Form accepts and displays emojis/symbols.
+## Name Validation
 
-**Username Validation**
-- [ ] Submit without username = Error: Username field is required.
-- [ ] Submit taken username = Error: Username is unavailable, choose a different one.
-- [ ] Submit very long username = Error: Username should not exceed maximum character limit.
-- [ ] Submit very short username = Error: Username should contain minimum required characters.
-- [ ] Submit valid username with only numbers = Form accepts numbers-only usernames.
+4. **Submit without name** = Error: Name field is required.
+5. **Submit with spaces in name** = Error: Name should not contain spaces.
+6. **Submit with special characters or numbers in name** = Error: Name should only contain alphabetic characters.
+7. **Submit very long name** = Error: Name should not exceed maximum character limit.
+8. **Submit very short name** = Error: Name should contain minimum required characters.
+9. **Submit valid names in different scripts** = Form handles diverse character sets correctly.
+10. **Submit name with emojis or symbols** = Form accepts and displays emojis/symbols.
 
-**Email Validation**
-- [ ] Submit without email = Error: Email address field is required.
-- [ ] Submit with spaces in email = Error: Email should not contain spaces.
-- [ ] Submit with incorrect email format = Error: Enter a valid email address.
-- [ ] Submit very long email = Error: Email should not exceed maximum character limit.
-- [ ] Submit very short email = Error: Email should contain minimum required characters.
-- [ ] Submit valid email with IDNs = Form handles internationalized domain names.
+## Username Validation
 
-**Final Submission and Outcome**
-- [ ] Submit form with valid details = Redirected to confirmation page or logged in.
-- [ ] Rapidly submit form multiple times = Form handles submissions without issues.
+11. **Submit without username** = Error: Username field is required.
+12. **Submit taken username** = Error: Username is unavailable, choose a different one.
+13. **Submit very long username** = Error: Username should not exceed maximum character limit.
+14. **Submit very short username** = Error: Username should contain minimum required characters.
+15. **Submit valid username with only numbers** = Form accepts numbers-only usernames.
 
-**Error Handling**
-- [ ] Encounter submission errors = Form retains data, displays relevant error messages.
-- [ ] Encounter errors for multiple fields = Form retains data, displays accurate error messages.
+## Email Validation
 
-**Navigation Behavior**
-- [ ] Navigate away and return = Form retains entered information.
-- [ ] Navigate to another page, then return = Form retains data when returning.
+16. **Submit without email** = Error: Email address field is required.
+17. **Submit with spaces in email** = Error: Email should not contain spaces.
+18. **Submit with incorrect email format** = Error: Enter a valid email address.
+19. **Submit very long email** = Error: Email should not exceed maximum character limit.
+20. **Submit very short email** = Error: Email should contain minimum required characters.
+21. **Submit valid email with IDNs** = Form handles internationalized domain names.
 
-**Edge Cases**
-- [ ] Submit form repeatedly with same information = Form processes identical submissions correctly.
-- [ ] Submit form with maximum allowed characters = Form accepts input and processes it correctly.
-- [ ] Submit form with minimum allowed characters = Form accepts input and processes it correctly.
+## Final Submission and Outcome
 
-**Security and Validation**
-- [ ] Test SQL injection attempts = Form sanitizes input, prevents SQL injection attacks.
-- [ ] Test code injection attempts = Form sanitizes input, prevents code execution.
-- [ ] Test XSS attempts = Form handles input securely, prevents XSS attacks.
+22. **Submit form with valid details** = Redirected to confirmation page or logged in.
+23. **Rapidly submit form multiple times** = Form handles submissions without issues.
 
-**Session and Persistence**
-- [ ] Submit form, close browser, return later = Form doesn't retain data after session ends.
+## Error Handling
 
-**Performance and Load Testing**
-- [ ] Simulate many submissions in short time = Form handles load and submissions without errors.
+24. **Encounter submission errors** = Form retains data, displays relevant error messages.
+25. **Encounter errors for multiple fields** = Form retains data, displays accurate error messages.
 
-**Boundary Testing**
-- [ ] Enter values near maximum characters = Form accepts input near maximum limit.
-- [ ] Enter values near minimum characters = Form accepts input near minimum limit.
+## Navigation Behavior
 
-| Action | Expected Result |
-|--------|-----------------|
-| **Initial Navigation and Submission:** |
-| Navigate to registration page and submit form with correct details | Success message displayed, information saved |
-| Navigate to registration page and immediately submit without entering anything | Form should remain empty, no submission attempted |
-| Navigate to registration page and then navigate away without submitting | Form should retain entered data when returning |
-| **Name Validation:** |
-| Attempt submission without filling name | Error: Name field is required |
-| Attempt submission with spaces in the name field | Error: Name should not contain spaces |
-| Enter name with special characters or numbers | Error: Name should only contain alphabetic characters |
-| Enter a very long name (more than allowed characters) | Error: Name should not exceed the maximum character limit |
-| Enter a very short name (less than required characters) | Error: Name should contain at least the minimum required characters |
-| Enter valid names in different scripts (e.g., Cyrillic, Chinese) | Form should handle and process diverse character sets |
-| Enter a name with emojis or symbols | Form should accept and display emojis or symbols correctly |
-| Enter a name with leading/trailing whitespace | Form should trim whitespace and process the name correctly |
-| **Username Validation:** |
-| Attempt submission without providing username | Error: Username field is required |
-| Enter username that's already taken | Error: Username is unavailable, choose a different one |
-| Enter a very long username (more than allowed characters) | Error: Username should not exceed the maximum character limit |
-| Enter a very short username (less than required characters) | Error: Username should contain at least the minimum required characters |
-| Enter a valid username with only numbers | Form should accept usernames with numbers-only correctly |
-| **Email Validation:** |
-| Attempt submission without providing email address | Error: Email address field is required |
-| Attempt submission with spaces in the email field | Error: Email should not contain spaces |
-| Enter email with incorrect format | Error: Enter a valid email address |
-| Enter a very long email (more than allowed characters) | Error: Email should not exceed the maximum character limit |
-| Enter a very short email (less than required characters) | Error: Email should contain at least the minimum required characters |
-| Enter valid email with internationalized domain names (IDNs) | Form should handle IDNs correctly |
-| **Final Submission and Outcome:** |
-| Submit form with valid details | Redirected to confirmation page or logged in |
-| Attempt to submit the form multiple times in rapid succession | Form should handle and process submissions without issues |
-| **Error Handling:** |
-| Encounter submission errors while submitting form | Form retains valid info, displays appropriate error messages |
-| Encounter submission errors for multiple fields | Form retains valid info, displays relevant error messages |
-| **Navigation Behavior:** |
-| Navigate away from page and return | Form retains previously entered information |
-| Navigate to another page after partially filling the form | Form should retain the entered data when returning |
-| **Edge Cases:** |
-| Submit the form with the same information repeatedly | Form should handle and process identical submissions correctly |
-| Submit form with exactly the maximum allowed number of characters for each field | Form should accept the input and process it correctly |
-| Submit form with exactly the minimum allowed number of characters for each field | Form should accept the input and process it correctly |
-| **Security and Validation:** |
-| Test form with malicious SQL injection attempts | Form should sanitize input and prevent SQL injection attacks |
-| Test form with malicious code injection attempts | Form should sanitize input and prevent code execution |
-| Test form with cross-site scripting (XSS) attempts | Form should handle input securely and prevent XSS attacks |
-| **Session and Persistence:** |
-| Submit form, close browser, and return later | Form should not retain information after session ends |
-| **Performance and Load Testing:** |
-| Simulate a large number of submissions within a short time | Form should handle the load and submissions without errors |
-| **Boundary Testing:** |
-| Enter values near the maximum allowed characters for each field | Form should accept the input and process it correctly |
-| Enter values near the minimum allowed characters for each field | Form should accept the input and process it correctly |
+26. **Navigate away and return** = Form retains entered information.
+27. **Navigate to another page, then return** = Form retains data when returning.
 
-_While it's important to strive for comprehensive test coverage, keep in mind that it's also important to prioritize based on the risks and potential impact of various scenarios on your application. Not all of these test cases may be necessary for every application, so consider the context and requirements of your specific project._
+## Edge Cases
+
+28. **Submit form repeatedly with same information** = Form processes identical submissions correctly.
+29. **Submit form with maximum allowed characters** = Form accepts input and processes it correctly.
+30. **Submit form with minimum allowed characters** = Form accepts input and processes it correctly.
+
+## Security and Validation
+
+31. **Test SQL injection attempts** = Form sanitizes input, prevents SQL injection attacks.
+32. **Test code injection attempts** = Form sanitizes input, prevents code execution.
+33. **Test XSS attempts** = Form handles input securely, prevents XSS attacks.
+
+## Session and Persistence
+
+34. **Submit form, close browser, return later** = Form doesn't retain data after session ends.
+
+## Performance and Load Testing
+
+35. **Simulate many submissions in short time** = Form handles load and submissions without errors.
+
+## Boundary Testing
+
+36. **Enter values near maximum characters** = Form accepts input near maximum limit.
+37. **Enter values near minimum characters** = Form accepts input near minimum limit.
+
+While it's important to strive for comprehensive test coverage, keep in mind that it's also important to prioritize based on the risks and potential impact of various scenarios on your application. Not all of these test cases may be necessary for every application, so consider the context and requirements of your specific project.
