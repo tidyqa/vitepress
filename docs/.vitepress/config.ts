@@ -98,10 +98,10 @@ export default defineConfig({
               text: 'Buttons and Links',
               link: '/snippets/css/buttons-and-links/',
             },
-            // {
-            //   text: 'Navigation',
-            //   link: '/snippets/css/navigation/',
-            // },
+            {
+              text: 'Navigation',
+              link: '/snippets/css/navigation/',
+            },
             // {
             //   text: 'Forms',
             //   link: '/snippets/css/forms/',

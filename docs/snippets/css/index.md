@@ -27,6 +27,7 @@ features:
     link: /snippets/css/buttons-and-links/
   - title: Navigation
     details: Create intuitive navigation systems that help users explore your website effortlessly.
+    link: /snippets/css/navigation/
   - title: Forms
     details: Design user-friendly forms with effective layouts and input elements for valuable interactions.
   - title: Images and Icons
