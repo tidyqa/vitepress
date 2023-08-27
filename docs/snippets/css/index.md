@@ -24,6 +24,7 @@ features:
     link: /snippets/css/color-and-backgrounds/
   - title: Buttons and Links
     details: Design interactive buttons and links that enhance user engagement and navigation.
+    link: /snippets/css/buttons-and-links/
   - title: Navigation
     details: Create intuitive navigation systems that help users explore your website effortlessly.
   - title: Forms

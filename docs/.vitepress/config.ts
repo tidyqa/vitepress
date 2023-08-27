@@ -94,10 +94,10 @@ export default defineConfig({
               text: 'Color and Backgrounds',
               link: '/snippets/css/color-and-backgrounds/',
             },
-            // {
-            //   text: 'Buttons and Links',
-            //   link: '/snippets/css/buttons-and-links/',
-            // },
+            {
+              text: 'Buttons and Links',
+              link: '/snippets/css/buttons-and-links/',
+            },
             // {
             //   text: 'Navigation',
             //   link: '/snippets/css/navigation/',
