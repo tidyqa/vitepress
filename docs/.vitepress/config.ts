@@ -53,9 +53,9 @@ export default defineConfig({
       {
         text: 'Tutorials',
         items: [
-          { text: 'HTML Tutorial', link: '/html/' },
-          { text: 'CSS Tutorial', link: '/css/' },
-          { text: 'JavaScript Tutorial', link: '/javascript/' },
+          { text: 'HTML', link: '/html/' },
+          { text: 'CSS', link: '/css/' },
+          { text: 'JavaScript', link: '/javascript/' },
         ],
       },
 
