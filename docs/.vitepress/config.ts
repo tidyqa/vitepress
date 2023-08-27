@@ -102,10 +102,10 @@ export default defineConfig({
               text: 'Navigation',
               link: '/snippets/css/navigation/',
             },
-            // {
-            //   text: 'Forms',
-            //   link: '/snippets/css/forms/',
-            // },
+            {
+              text: 'Forms',
+              link: '/snippets/css/forms/',
+            },
             // {
             //   text: 'Images and Icons',
             //   link: '/snippets/css/images-and-icons/',

@@ -30,6 +30,7 @@ features:
     link: /snippets/css/navigation/
   - title: Forms
     details: Design user-friendly forms with effective layouts and input elements for valuable interactions.
+    link: /snippets/css/forms/
   - title: Images and Icons
     details: Enhance visual impact using images and icons while maintaining optimal performance.
   - title: Animations and Transitions
