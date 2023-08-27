@@ -86,9 +86,81 @@ export default defineConfig({
               text: 'Layout and Positioning',
               link: '/snippets/css/layout-and-positioning/',
             },
+            {
+              text: 'Typography',
+              link: '/snippets/css/typography/',
+            },
+            {
+              text: 'Color and Backgrounds',
+              link: '/snippets/css/color-and-backgrounds/',
+            },
             // {
-            //   text: 'Login Page',
-            //   link: '/testing/login-page/',
+            //   text: 'Buttons and Links',
+            //   link: '/snippets/css/buttons-and-links/',
+            // },
+            // {
+            //   text: 'Navigation',
+            //   link: '/snippets/css/navigation/',
+            // },
+            // {
+            //   text: 'Forms',
+            //   link: '/snippets/css/forms/',
+            // },
+            // {
+            //   text: 'Images and Icons',
+            //   link: '/snippets/css/images-and-icons/',
+            // },
+            // {
+            //   text: 'Animations and Transitions',
+            //   link: '/snippets/css/animations-and-transitions/',
+            // },
+            // {
+            //   text: 'Responsive Design',
+            //   link: '/snippets/css/responsive-design/',
+            // },
+            // {
+            //   text: 'Flexbox',
+            //   link: '/snippets/css/flexbox/',
+            // },
+            // {
+            //   text: 'Grid',
+            //   link: '/snippets/css/grid/',
+            // },
+            // {
+            //   text: 'Background Effects',
+            //   link: '/snippets/css/background-effects/',
+            // },
+            // {
+            //   text: 'Shadows and Effects',
+            //   link: '/snippets/css/shadows-and-effects/',
+            // },
+            // {
+            //   text: 'Transitions and Transformations',
+            //   link: '/snippets/css/transitions-and-transformations/',
+            // },
+            // {
+            //   text: 'Tables',
+            //   link: '/snippets/css/tables/',
+            // },
+            // {
+            //   text: 'Cards and Panels',
+            //   link: '/snippets/css/cards-and-panels/',
+            // },
+            // {
+            //   text: 'Hover Effects',
+            //   link: '/snippets/css/hover-effects/',
+            // },
+            // {
+            //   text: 'Pagination and Loaders',
+            //   link: '/snippets/css/pagination-and-loaders/',
+            // },
+            // {
+            //   text: 'Custom Cursors',
+            //   link: '/snippets/css/custom-cursors/',
+            // },
+            // {
+            //   text: 'Print Styles',
+            //   link: '/snippets/css/print-styles/',
             // },
           ],
         },

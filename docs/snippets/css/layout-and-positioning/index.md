@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Layout and Positioning - CSS Snippets
-description: Learn to center elements, create sticky header, creating columns, and more.
+description: Discover techniques for seamless web element arrangement. Elevate your design skills with optimal positioning strategies.
 head:
   - ['meta', {property: 'og:title', content:  'Layout and Positioning - CSS Snippets' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/snippets/css/layout-and-positioning/' }] 
@@ -42,7 +42,7 @@ This snippet shows how to center an element both horizontally and vertically wit
 
 ## Sticky Header
 
-Learn how to create a sticky header that remains fixed at the top of the viewport as the user scrolls. This effect is achieved using the `position: sticky;` property in CSS.
+Create a sticky header that remains fixed at the top of the viewport as the user scrolls. This effect is achieved using the `position: sticky;` property in CSS.
 
 ```html
 <!DOCTYPE html>
@@ -70,7 +70,7 @@ Learn how to create a sticky header that remains fixed at the top of the viewpor
 
 ## Equal Height Columns with Flexbox
 
-Discover how to create equal height columns using the flexbox layout model. This snippet uses the `display: flex;` property on the container and assigns a `flex` value to each column, resulting in columns of equal height.
+Create equal height columns using the flexbox layout model. This snippet uses the `display: flex;` property on the container and assigns a `flex` value to each column, resulting in columns of equal height.
 
 ```html
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ Discover how to create equal height columns using the flexbox layout model. This
 
 ## Two-Column Layout
 
-Learn how to create a simple two-column layout using the CSS grid layout. This snippet sets up a grid container with two equally sized columns.
+Create a simple two-column layout using the CSS grid layout. This snippet sets up a grid container with two equally sized columns.
 
 ```html
 <!DOCTYPE html>
@@ -173,7 +173,7 @@ This snippet demonstrates how to use the `float` property to make text wrap arou
 
 ## Horizontal Navigation Menu
 
-Discover how to create a horizontal navigation menu using an unordered list and CSS. This snippet uses the `float` property to position the menu items side by side.
+Create a horizontal navigation menu using an unordered list and CSS. This snippet uses the `float` property to position the menu items side by side.
 
 ```html
 <!DOCTYPE html>
@@ -214,7 +214,7 @@ Discover how to create a horizontal navigation menu using an unordered list and 
 
 ## Vertical Navigation Menu
 
-Learn how to create a vertical navigation menu using an unordered list and CSS. This snippet styles the menu items to stack vertically.
+Create a vertical navigation menu using an unordered list and CSS. This snippet styles the menu items to stack vertically.
 
 ```html
 <!DOCTYPE html>
@@ -253,7 +253,7 @@ Learn how to create a vertical navigation menu using an unordered list and CSS. 
 
 ## Full-Height Sidebar
 
-Explore how to create a full-height sidebar that remains fixed while the content scrolls. This snippet uses the `position: fixed;` property to achieve the effect.
+Create a full-height sidebar that remains fixed while the content scrolls. This snippet uses the `position: fixed;` property to achieve the effect.
 
 ```html
 <!DOCTYPE html>
@@ -295,7 +295,7 @@ Explore how to create a full-height sidebar that remains fixed while the content
 
 ## Footer at the Bottom of the Page
 
-Learn how to create a footer that sticks to the bottom of the page, even if the content is short. This snippet uses flexbox to ensure the footer stays at the bottom.
+Create a footer that sticks to the bottom of the page, even if the content is short. This snippet uses flexbox to ensure the footer stays at the bottom.
 
 ```html
 <!DOCTYPE html>
@@ -338,7 +338,7 @@ Learn how to create a footer that sticks to the bottom of the page, even if the 
 
 ## Split Screen Layout
 
-Discover how to create a split screen layout with two panes using CSS. This snippet sets up a flex container and evenly divides it into left and right panes.
+Create a split screen layout with two panes using CSS. This snippet sets up a flex container and evenly divides it into left and right panes.
 
 ```html
 <!DOCTYPE html>
@@ -381,7 +381,7 @@ Discover how to create a split screen layout with two panes using CSS. This snip
 
 ## Full-Page Background Image
 
-Learn how to set a full-page background image for your website using CSS. This snippet covers the background properties to ensure the image covers the entire viewport.
+Set a full-page background image for your website using CSS. This snippet covers the background properties to ensure the image covers the entire viewport.
 
 ```html
 <!DOCTYPE html>
@@ -409,7 +409,7 @@ Learn how to set a full-page background image for your website using CSS. This s
 
 ## Fixed Footer
 
-Discover how to create a footer that stays fixed at the bottom of the viewport, regardless of the content length. This snippet uses absolute positioning to achieve the fixed footer effect.
+Create a footer that stays fixed at the bottom of the viewport, regardless of the content length. This snippet uses absolute positioning to achieve the fixed footer effect.
 
 ```html
 <!DOCTYPE html>
@@ -444,7 +444,7 @@ Discover how to create a footer that stays fixed at the bottom of the viewport, 
 
 ## Carousel with CSS Scroll Snap
 
-Learn how to create a simple image carousel using CSS Scroll Snap. This snippet demonstrates how to make images scroll smoothly within a container.
+Create a simple image carousel using CSS Scroll Snap. This snippet demonstrates how to make images scroll smoothly within a container.
 
 ```html
 <!DOCTYPE html>
@@ -476,7 +476,7 @@ Learn how to create a simple image carousel using CSS Scroll Snap. This snippet 
 
 ## Responsive Image Grid
 
-Discover how to create a responsive image grid using CSS Grid. This snippet sets up a grid layout that adapts to different screen sizes.
+Create a responsive image grid using CSS Grid. This snippet sets up a grid layout that adapts to different screen sizes.
 
 ```html
 <!DOCTYPE html>
@@ -508,7 +508,7 @@ Discover how to create a responsive image grid using CSS Grid. This snippet sets
 
 ## Circular Image
 
-Learn how to create a circular image using CSS. This snippet uses the `border-radius` property to achieve the circular shape.
+Create a circular image using CSS. This snippet uses the `border-radius` property to achieve the circular shape.
 
 ```html
 <!DOCTYPE html>
@@ -539,7 +539,7 @@ Learn how to create a circular image using CSS. This snippet uses the `border-ra
 
 ## Multi-Level Dropdown Menu
 
-Discover how to create a multi-level dropdown menu using HTML and CSS. This snippet sets up nested lists to create a dropdown with submenus.
+Create a multi-level dropdown menu using HTML and CSS. This snippet sets up nested lists to create a dropdown with submenus.
 
 ```html
 <!DOCTYPE html>
@@ -596,7 +596,7 @@ Discover how to create a multi-level dropdown menu using HTML and CSS. This snip
 
 ## Responsive Video Embed
 
-Learn how to create a responsive video embed using CSS. This snippet maintains the video's aspect ratio and adjusts its size based on the screen width.
+Create a responsive video embed using CSS. This snippet maintains the video's aspect ratio and adjusts its size based on the screen width.
 
 ```html
 <!DOCTYPE html>
@@ -629,7 +629,7 @@ Learn how to create a responsive video embed using CSS. This snippet maintains t
 
 ## Custom Checkbox and Radio Button
 
-Discover how to create custom-styled checkbox and radio button inputs using CSS. This snippet hides the default inputs and styles their labels.
+Create custom-styled checkbox and radio button inputs using CSS. This snippet hides the default inputs and styles their labels.
 
 ```html
 <!DOCTYPE html>
@@ -683,7 +683,7 @@ Discover how to create custom-styled checkbox and radio button inputs using CSS.
 
 ## Progress Bar
 
-Learn how to create a progress bar using CSS. This snippet uses the `::before` pseudo-element to visually represent progress.
+Create a progress bar using CSS. This snippet uses the `::before` pseudo-element to visually represent progress.
 
 ```html
 <!DOCTYPE html>
@@ -713,13 +713,9 @@ Learn how to create a progress bar using CSS. This snippet uses the `::before` p
 </html>
 ```
 
-I apologize for the oversight. Here is the missing snippet along with its description, provided in Markdown format:
-
----
-
 ## Sliding Sidebar Menu
 
-Learn how to create a sliding sidebar menu that appears from the side of the screen when a button is clicked. This snippet uses CSS transitions and transforms for the sliding effect.
+Create a sliding sidebar menu that appears from the side of the screen when a button is clicked. This snippet uses CSS transitions and transforms for the sliding effect.
 
 ```html
 <!DOCTYPE html>
