@@ -175,6 +175,10 @@ export default defineConfig({
           //collapsed: false,
           items: [
             {
+              text: 'Smart Approach',
+              link: '/testing/smart/',
+            },
+            {
               text: 'Registration Page',
               link: '/testing/registration-page/',
             },
