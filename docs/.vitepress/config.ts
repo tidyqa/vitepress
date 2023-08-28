@@ -110,10 +110,10 @@ export default defineConfig({
               text: 'Images and Icons',
               link: '/snippets/css/images-and-icons/',
             },
-            // {
-            //   text: 'Animations and Transitions',
-            //   link: '/snippets/css/animations-and-transitions/',
-            // },
+            {
+              text: 'Animations and Transitions',
+              link: '/snippets/css/animations-and-transitions/',
+            },
             // {
             //   text: 'Responsive Design',
             //   link: '/snippets/css/responsive-design/',

@@ -36,6 +36,7 @@ features:
     link: /snippets/css/images-and-icons/
   - title: Animations and Transitions
     details: Learn to use animations and transitions to add dynamism to your web designs.
+    link: /snippets/css/animations-and-transitions/
   - title: Responsive Design
     details: Design websites that adapt seamlessly to various screen sizes and devices.
   - title: Flexbox
