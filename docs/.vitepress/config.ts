@@ -46,6 +46,7 @@ export default defineConfig({
       {
         text: 'Testing',
         items: [
+          { text: 'Smart Approach', link: '/testing/smart/' },
           { text: 'Registration Page', link: '/testing/registration-page/' },
           { text: 'Login Page', link: '/testing/login-page/' },
         ],
