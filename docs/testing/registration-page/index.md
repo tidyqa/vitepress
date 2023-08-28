@@ -6,7 +6,7 @@ head:
   - ['meta', {property: 'og:title', content:  'Testing Registration Page'}]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/testing/registration-page/' }] 
   - ['meta', {name: 'twitter:title', content: 'Testing Registration Page'}]
-  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/snippets/testing/registration-page/'}]
+  - ['link', {rel: 'canonical', href: 'https://tidyqa.com/testing/registration-page/'}]
 ---
 
 # Testing Registration Page
