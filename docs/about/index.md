@@ -38,7 +38,7 @@ Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://sta
 
 Content generated for educational purposes with assistance from [ChatGPT](https://chat.openai.com/) and subsequently revised by human editors.
 
-The code is hosted on GitHub, using the MIT license and currently running on [Netlify](https://www.netlify.com).
+The project is hosted on [GitHub](https://github.com/), edited using [GitHub.dev](https://github.dev/) web-based editor, and is currently deployed and running on [Netlify](https://www.netlify.com).
 
 ## Contact
 

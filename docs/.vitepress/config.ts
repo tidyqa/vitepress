@@ -32,7 +32,7 @@ export default defineConfig({
       pattern: 'https://github.com/tidyqa/vitepress/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    externalLinkIcon:true,
+    //externalLinkIcon:true,
     footer: {
       message:
         '<a href="/about/">About</a><br>Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
