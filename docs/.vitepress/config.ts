@@ -47,6 +47,7 @@ export default defineConfig({
         text: 'Testing',
         items: [
           { text: 'Registration Page', link: '/testing/registration-page/' },
+          { text: 'Login Page', link: '/testing/login-page/' },
         ],
       },
       
@@ -176,10 +177,10 @@ export default defineConfig({
               text: 'Registration Page',
               link: '/testing/registration-page/',
             },
-            // {
-            //   text: 'Login Page',
-            //   link: '/testing/login-page/',
-            // },
+            {
+              text: 'Login Page',
+              link: '/testing/login-page/',
+            },
           ],
         },
       ],

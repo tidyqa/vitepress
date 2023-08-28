@@ -16,4 +16,7 @@ features:
   - title: Registration Page
     details: Process of testing a registration form with fields for name, username, and email address.
     link: /testing/registration-page/
+  - title: Login Page
+    details: Process of testing a login form with fields for username and password.
+    link: /testing/login-page/
 ---
