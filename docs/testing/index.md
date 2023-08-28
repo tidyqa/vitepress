@@ -13,10 +13,13 @@ hero:
   tagline: Free test cases and scenarios.
 
 features:
+  - title: Smart Testing Approach
+    details: Deliver high-quality software while adapting to project demands.
+    link: /testing/smart/
   - title: Registration Page
     details: Process of testing a registration form with fields for name, username, and email address.
     link: /testing/registration-page/
   - title: Login Page
-    details: Process of testing a login form with fields for username and password.
+    details: Validate your login page, encompassing successful and unsuccessful logins.
     link: /testing/login-page/
 ---
