@@ -33,6 +33,7 @@ features:
     link: /snippets/css/forms/
   - title: Images and Icons
     details: Enhance visual impact using images and icons while maintaining optimal performance.
+    link: /snippets/css/images-and-icons/
   - title: Animations and Transitions
     details: Learn to use animations and transitions to add dynamism to your web designs.
   - title: Responsive Design

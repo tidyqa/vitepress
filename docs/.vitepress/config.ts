@@ -106,10 +106,10 @@ export default defineConfig({
               text: 'Forms',
               link: '/snippets/css/forms/',
             },
-            // {
-            //   text: 'Images and Icons',
-            //   link: '/snippets/css/images-and-icons/',
-            // },
+            {
+              text: 'Images and Icons',
+              link: '/snippets/css/images-and-icons/',
+            },
             // {
             //   text: 'Animations and Transitions',
             //   link: '/snippets/css/animations-and-transitions/',
