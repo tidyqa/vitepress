@@ -23,13 +23,13 @@ actions:
     link: /tutorials/
 
 features:
-  - title: Testing Registration Page
-    details: Process of testing a registration form.
-    link: /testing/registration-page/
+  - title: SMART Test Cases
+    details: Keep test cases simple for better results. Learn the SMART method to improve efficiency.
+    link: /testing/smart-test-cases/
+  - title: Simple Bug Tracker
+    details: Explore Chrome extension development and bug tracking with a practical project.
+    link: /simple-bug-tracker/
   - title: Tutorials
-    details: Learn Web Development Basics.
+    details: Master HTML, CSS, and JavaScript basics to establish a foundation in web development.
     link: /tutorials/
-  - title: JavaScript Snippets
-    details: Collection of useful code snippets.
-    link: /snippets/javascript/
 ---
