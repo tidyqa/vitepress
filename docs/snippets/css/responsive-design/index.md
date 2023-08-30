@@ -532,9 +532,7 @@ The `.small-text` class ensures a smaller font size at screen widths below `600p
 </head>
 <body>
 <p>This is regular text.</p>
-<p class="small-text
-
-">This is smaller text.</p>
+<p class="small-text">This is smaller text.</p>
 </body>
 </html>
 ```

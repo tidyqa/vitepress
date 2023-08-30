@@ -124,14 +124,14 @@ export default defineConfig({
               text: 'Flexbox',
               link: '/snippets/css/flexbox/',
             },
-            // {
-            //   text: 'Grid',
-            //   link: '/snippets/css/grid/',
-            // },
-            // {
-            //   text: 'Background Effects',
-            //   link: '/snippets/css/background-effects/',
-            // },
+            {
+              text: 'Grid',
+              link: '/snippets/css/grid/',
+            },
+            {
+              text: 'Background Effects',
+              link: '/snippets/css/background-effects/',
+            },
             // {
             //   text: 'Shadows and Effects',
             //   link: '/snippets/css/shadows-and-effects/',

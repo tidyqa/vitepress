@@ -45,8 +45,10 @@ features:
     link: /snippets/css/flexbox/
   - title: Grid
     details: Create complex layouts with CSS Grid, enabling precise control over content placement.
+    link: /snippets/css/grid/
   - title: Background Effects
     details: Implement captivating background effects to elevate your design aesthetics.
+    link: /snippets/css/background-effects/
   - title: Shadows and Effects
     details: Add depth and dimension with shadow and effect techniques.
   - title: Transitions and Transformations
