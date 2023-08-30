@@ -13,6 +13,10 @@ hero:
   tagline: Commonly used HTML, CSS, and JavaScript code snippets.
 
 features:
+  - title: CSS Snippets
+    details: Whether you're a beginner or an experienced developer, these CSS snippets can help streamline your development process and improve the visual appeal of your websites.
+    link: /snippets/css/
   - title: JavaScript Snippets
+    details: Whether you're building a simple website or a complex web application, these JavaScript snippets can save you time and effort by providing pre-written code for common tasks and features.
     link: /snippets/javascript/
 ---
