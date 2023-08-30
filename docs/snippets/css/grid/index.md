@@ -279,9 +279,7 @@ This snippet individually aligns items using the `justify-self` and `align-self`
 This example sets different column gaps using the `grid-column-gap` property.
 
 ```html
-<!DOCTYPE
-
- html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
