@@ -42,6 +42,7 @@ features:
     link: /snippets/css/responsive-design/
   - title: Flexbox
     details: Master flexible layout structures using the CSS Flexbox model for efficient design.
+    link: /snippets/css/flexbox/
   - title: Grid
     details: Create complex layouts with CSS Grid, enabling precise control over content placement.
   - title: Background Effects
