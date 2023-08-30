@@ -34,6 +34,10 @@ Hello, I'm Bruno, and I appreciate you taking the time to visit!
 
 ## About Website
 
+If you want to know about software testing, here you will find testing techniques I use, tips and my approach to testing.
+
+If you are new to web development, you will find HTML, CSS and JavaScript tutorials and a collection of useful snippets to help you get started.
+
 Developed using [VitePress](https://vitepress.dev/) and [StackBlitz](https://stackblitz.com/).
 
 Content generated for educational purposes with assistance from [ChatGPT](https://chat.openai.com/) and subsequently revised by human editors.
