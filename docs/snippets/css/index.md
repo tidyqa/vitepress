@@ -39,6 +39,7 @@ features:
     link: /snippets/css/animations-and-transitions/
   - title: Responsive Design
     details: Design websites that adapt seamlessly to various screen sizes and devices.
+    link: /snippets/css/responsive-design/
   - title: Flexbox
     details: Master flexible layout structures using the CSS Flexbox model for efficient design.
   - title: Grid

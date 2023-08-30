@@ -116,14 +116,14 @@ export default defineConfig({
               text: 'Animations and Transitions',
               link: '/snippets/css/animations-and-transitions/',
             },
-            // {
-            //   text: 'Responsive Design',
-            //   link: '/snippets/css/responsive-design/',
-            // },
-            // {
-            //   text: 'Flexbox',
-            //   link: '/snippets/css/flexbox/',
-            // },
+            {
+              text: 'Responsive Design',
+              link: '/snippets/css/responsive-design/',
+            },
+            {
+              text: 'Flexbox',
+              link: '/snippets/css/flexbox/',
+            },
             // {
             //   text: 'Grid',
             //   link: '/snippets/css/grid/',
