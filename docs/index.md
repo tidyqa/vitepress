@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Exploratory Testing, Website Design & Optimization
-description: Enhance software quality and ensure flawless performance for your applications.
+description: Dive into realistic exploratory testing via SMART test cases, complemented by essential web development fundamentals in HTML, CSS, and JavaScript – a practical combination for holistic skills.
 
 head:
   - ['meta', {property: 'og:title', content:  'Exploratory Testing, Website Design & Optimization' }]
@@ -13,14 +13,6 @@ hero:
   name: TidyQA
   text: Bringing Ideas to Life
   tagline: Systematic approach to exploratory testing, combining creativity, intuition, and structured analysis.
-  
-actions:
-  - theme: brand
-    text: About
-    link: /about/
-  - theme: alt
-    text: Tutorials
-    link: /tutorials/
 
 features:
   - title: SMART Test Cases
