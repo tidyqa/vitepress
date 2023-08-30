@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Tutorials
-description: Chrome Extensions. HTML, CSS, and JavaScript.
+description: HTML, CSS, and JavaScript for beginners.
 head:
   - ['meta', {property: 'og:title', content:  'Tutorials' }]
   - ['meta', {property: 'og:url', content:  'https://tidyqa.com/tutorials/' }] 
@@ -10,7 +10,7 @@ head:
 
 hero:
   name: Tutorials
-  tagline: Basics of HTML, CSS, and JavaScript. Things that I have learned and I want to share.
+  tagline: Basics of HTML, CSS, and JavaScript.
 
 features:
   - title: HTML Tutorial
