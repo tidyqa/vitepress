@@ -132,10 +132,10 @@ export default defineConfig({
               text: 'Background Effects',
               link: '/snippets/css/background-effects/',
             },
-            // {
-            //   text: 'Shadows and Effects',
-            //   link: '/snippets/css/shadows-and-effects/',
-            // },
+            {
+              text: 'Shadows and Effects',
+              link: '/snippets/css/shadows-and-effects/',
+            },
             // {
             //   text: 'Transitions and Transformations',
             //   link: '/snippets/css/transitions-and-transformations/',

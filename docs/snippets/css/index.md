@@ -51,6 +51,7 @@ features:
     link: /snippets/css/background-effects/
   - title: Shadows and Effects
     details: Add depth and dimension with shadow and effect techniques.
+    link: /snippets/css/shadows-and-effects/
   - title: Transitions and Transformations
     details: Learn how to smoothly transform elements to enhance user interactions.
   - title: Tables
